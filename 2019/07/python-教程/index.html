@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="author" content="钱 奇">
+<meta name="keywords" content="tech">
+<meta name="description" content="廖雪峰老师的 Python 教程学习笔记">
+
+
+<meta property="og:description" content="廖雪峰老师的 Python 教程学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 教程 ">
+<meta name="twitter:title" content="Python 教程 ">
+<meta property="og:url" content="https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+<meta property="twitter:url" content="https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+<meta property="og:site_name" content="雪月">
+<meta property="og:description" content="廖雪峰老师的 Python 教程学习笔记">
+<meta name="twitter:description" content="廖雪峰老师的 Python 教程学习笔记">
+<meta property="og:locale" content="zh-ch">
+
+  
+    <meta property="article:published_time" content="2019-07-14T11:46:04">
+  
+  
+    <meta property="article:modified_time" content="2019-07-14T11:46:04">
+  
+  
+  
+    
+      <meta property="article:section" content="category">
+    
+      <meta property="article:section" content="subcategory">
+    
+  
+  
+    
+      <meta property="article:tag" content="tag1">
+    
+      <meta property="article:tag" content="tag2">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/dongtu.jpg">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/dongtu.jpg">
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/blog1.png">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/blog1.png">
+
+
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/touxiang.jpg">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/touxiang.jpg">
+
+
+    <title>Python 教程 </title>
+
+    <link rel="icon" href="https://misaya19.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://misaya19.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://misaya19.github.io/">雪月</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://misaya19.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://misaya19.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+        </a>
+        <h4 class="sidebar-profile-name">钱 奇</h4>
+        
+          <h5 class="sidebar-profile-bio">NJXZC-NUIST</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/misaya19" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('/images/blog1.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      Python 教程 
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-14T11:46:04&#43;08:00">
+        
+   14, 2019
+
+      </time>
+    
+    
+  
+  
+    <span></span>
+    
+      <a class="category-link" href="https://misaya19.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://misaya19.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>廖雪峰老师的 Python 教程学习笔记</p>
+
+<h1 id="table-of-contents"></h1><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#8-函数式编程">8 函数式编程</a>
+<ul>
+<li><a href="#8-1-高阶函数">8.1 高阶函数</a></li>
+<li><a href="#惰性序列与惰性计算">惰性序列与惰性计算</a>
+<ul>
+<li><a href="#8-1-1-map-reduce函数">8.1.1 map/reduce函数</a></li>
+<li><a href="#8-1-2-filter函数">8.1.2 filter函数</a></li>
+<li><a href="#8-1-3-sorted函数">8.1.3 sorted函数</a></li>
+</ul></li>
+<li><a href="#8-2-返回函数">8.2 返回函数</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+<hr />
+
+<h2 id="8-函数式编程">8 函数式编程</h2>
+
+<p>函数式编程（Functional Programming）是一种抽象程度很高的编程范式，有一个特点是：允许把函数本身作为参数传入另一个函数，还允许返回一个函数。</p>
+
+<h3 id="8-1-高阶函数">8.1 高阶函数</h3>
+
+<p>高阶函数（Higher-order function）：把函数作为参数传入的函数
+- 变量可以指向函数</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; # 把函数本身赋值给变量
+&gt;&gt;&gt; f = abs
+&gt;&gt;&gt; f(-10)
+10
+</code></pre>
+
+<p>这段代码说明 变量f已经指向了abs函数本身，即函数本身可以赋值给变量</p>
+
+<ul>
+<li>函数名也是变量
+函数名就是指向函数的一个变量：对于abs()函数，可以把abs看成变量，它指向一个计算绝对值的函数</li>
+
+<li><p>传入函数
+一个函数可以接收另一个函数作为参数，这种函数就是** *高阶函数***</p>
+
+<pre><code class="language-python">def add(x, y, f):
+ return f(x) + f(y)
+</code></pre>
+
+<p>这就是一个最简单的高阶函数，假设调用add(-5,6,abs)，计算过程如下：</p>
+
+<pre><code class="language-python">x = -5
+y = 6
+f = abs
+abs(-5) + abs(6) = 11
+return 11
+</code></pre></li>
+</ul>
+
+<h3 id="惰性序列与惰性计算">惰性序列与惰性计算</h3>
+
+<blockquote>
+<p>调用函数得到了一个iterator并赋值给一个变量后不会立即进行求值，而是当你用到其中某些元素的时候才去求某元素对的值(比如next()访问到某元素才去实际计算某元素的值)。
+惰性是指，你不主动去遍历它，就不会计算其中元素的值。</p>
+
+<p>有什么意义？
+一是这样我们就可以实现的无限序列的表示，比如全部的自然数(无穷尽)，而不需要真的在内存中计算出所有的自然数(那根本不可能，因为内存也不是无限的)，而是需要哪个数，计算到哪个数，或者需要哪些数，计算到那些数(比如前1000个)。
+二是在大规模数据处理中起到延迟计算的作用。当你处理大规模数据时，一次性进行处理往往是不方便的。而惰性序列就可以解决这个问题，它把计算的步骤延迟到了要实际使用该数据的时候。</p>
+</blockquote>
+
+<p>引自CSDN:<a href="https://blog.csdn.net/solo95/article/details/78834041">https://blog.csdn.net/solo95/article/details/78834041</a></p>
+
+<h4 id="8-1-1-map-reduce函数">8.1.1 map/reduce函数</h4>
+
+<p>map()函数：接收两个参数，第一个是函数，第二个是iterator，将传入的函数依次作用到序列的每一个元素，并将结果作为新的iterator返回</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; def f(x):
+	return x * x
+
+&gt;&gt;&gt; r = map(f,[1,2,3,4,5,6])
+&gt;&gt;&gt; list(r)
+[1, 4, 9, 16, 25, 36]
+</code></pre>
+
+<p>reduce()函数：接收两个参数，第一个是函数，第二个是iterator，将序列的前两个值传入函数做计算，然后把结果继续和序列的下一个元素做累计计算，用算式表达：
+<code>reduce(f,[x1,x2,x3]) = f(f(x1,x2),x3)</code></p>
+
+<p>比如对一个序列求和，就可以用reduce函数来实现：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; from functools import reduce
+&gt;&gt;&gt; def add(x, y):
+	return x + y
+
+&gt;&gt;&gt; reduce(add,[1,3,5,7,9])
+25
+</code></pre>
+
+<h4 id="8-1-2-filter函数">8.1.2 filter函数</h4>
+
+<p>filter()函数：用于过滤序列，和map()类似，也接收一个函数和一个序列，把传入的函数依次作用于每个元素，然后根据返回值是True或False决定保留还是丢弃该元素。</p>
+
+<p>例如，在一个list中，删掉偶数，只保留奇数：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; def is_odd(n):
+	return n % 2 == 1
+
+&gt;&gt;&gt; list(filter(is_odd,[1,2,3,4,5,6,7,8,9,10]))
+[1, 3, 5, 7, 9]
+</code></pre>
+
+<h4 id="8-1-3-sorted函数">8.1.3 sorted函数</h4>
+
+<p>sorted()函数:</p>
+
+<p>1.可以对list进行排序</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; sorted([3,5,8,123,-5,6])
+[-5, 3, 5, 6, 8, 123]
+</code></pre>
+
+<p>2.接收一个key函数来实现自定义排序</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; # 指定按 绝对值大小排序
+&gt;&gt;&gt; sorted([3,-5,8,-9,32,-1], key = abs)
+[-1, 3, -5, 8, -9, 32]
+</code></pre>
+
+<pre><code class="language-python">&gt;&gt;&gt; # 指定：字符串忽略大小写进行排序
+&gt;&gt;&gt; sorted(['bob','Zoo','Credit','david'],key=str.lower)
+['bob', 'Credit', 'david', 'Zoo']
+</code></pre>
+
+<p>3.还可以传入第三个参数来进行反向排序</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; # 指定：字符串忽略大小写进行反向排序（从大到小）
+&gt;&gt;&gt; sorted(['bob','Zoo','Credit','david'],key=str.lower,reverse=True)
+['Zoo', 'david', 'Credit', 'bob']
+</code></pre>
+
+<h3 id="8-2-返回函数">8.2 返回函数</h3>
+
+<p>高阶函数除了可以接收函数作为 参数 外，还可以把函数作为结果值返回。
+假设我们要实现一个可变参数的求和，如果不需要立即求和，而是在后面的代码中，根据需要再计算：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; def lazy_sum(*args):
+	def sum():
+		ax = 0
+		for n in args:
+			ax = ax + n
+		return ax
+	return sum
+
+&gt;&gt;&gt; f = lazy_sum(1,3,5,7,9)
+&gt;&gt;&gt; f
+&lt;function lazy_sum.&lt;locals&gt;.sum at 0x0000017E6133AE18&gt;
+&gt;&gt;&gt; f()
+25
+</code></pre>
+
+<p>当我们调用lazy_sum函数时，返回的并不是求和结果，而是求和函数，只有调用函数f()时，才是真正计算求和的结果。
+在这个例子中，我们在函数lazy_sum中又定义了函数sum，并且内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种结构被称为<strong><em>“闭包（Closure）”</em></strong></p>
+
+<p><strong>注意:</strong>一个函数可以返回一个计算结果，也可以返回一个函数
+返回一个函数时，牢记该函数并未执行，返回函数中不要引用任何可能会变化的变量。</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://misaya19.github.io/tags/tag1/">tag1</a>
+
+  <a class="tag tag--primary tag--small" href="https://misaya19.github.io/tags/tag2/">tag2</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-tooltip="Python 视频教程 学习笔记">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 钱 奇. 
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-tooltip="Python 视频教程 学习笔记">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E6%2595%2599%25E7%25A8%258B%2F">
+          <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E6%2595%2599%25E7%25A8%258B%2F">
+          <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E6%2595%2599%25E7%25A8%258B%2F">
+          <i class="fa fa-google-plus"></i><span>%!(EXTRA string=Google&#43;)</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+    
+    <h4 id="about-card-name">钱 奇</h4>
+    
+      <div id="about-card-bio">NJXZC-NUIST</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        学生
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        南京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://misaya19.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://misaya19.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/misaya19.github.io\/2019\/07\/python-%E6%95%99%E7%A8%8B\/';
+          
+            this.page.identifier = '\/2019\/07\/python-%E6%95%99%E7%A8%8B\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

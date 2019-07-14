@@ -1,0 +1,3496 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.6-BETA">
+<meta name="author" content="钱 奇">
+<meta name="keywords" content="tech">
+<meta name="description" content="Bilibili的 Python 视频教程学习笔记">
+
+
+<meta property="og:description" content="Bilibili的 Python 视频教程学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 视频教程 学习笔记">
+<meta name="twitter:title" content="Python 视频教程 学习笔记">
+<meta property="og:url" content="https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<meta property="twitter:url" content="https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<meta property="og:site_name" content="雪月">
+<meta property="og:description" content="Bilibili的 Python 视频教程学习笔记">
+<meta name="twitter:description" content="Bilibili的 Python 视频教程学习笔记">
+<meta property="og:locale" content="zh-ch">
+
+  
+    <meta property="article:published_time" content="2019-07-14T11:43:04">
+  
+  
+    <meta property="article:modified_time" content="2019-07-14T11:43:04">
+  
+  
+  
+    
+      <meta property="article:section" content="category">
+    
+      <meta property="article:section" content="subcategory">
+    
+  
+  
+    
+      <meta property="article:tag" content="tag1">
+    
+      <meta property="article:tag" content="tag2">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/python.jpg">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/python.jpg">
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/pythonlong3.jpg">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/pythonlong3.jpg">
+
+
+
+
+  <meta property="og:image" content="https://misaya19.github.io/images/touxiang.jpg">
+  <meta property="twitter:image" content="https://misaya19.github.io/images/touxiang.jpg">
+
+
+    <title>Python 视频教程 学习笔记</title>
+
+    <link rel="icon" href="https://misaya19.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://misaya19.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://misaya19.github.io/">雪月</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://misaya19.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://misaya19.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+        </a>
+        <h4 class="sidebar-profile-name">钱 奇</h4>
+        
+          <h5 class="sidebar-profile-bio">NJXZC-NUIST</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/misaya19" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://misaya19.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('/images/pythonlong3.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      Python 视频教程 学习笔记
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-14T11:43:04&#43;08:00">
+        
+   14, 2019
+
+      </time>
+    
+    
+  
+  
+    <span></span>
+    
+      <a class="category-link" href="https://misaya19.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://misaya19.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Bilibili的 Python 视频教程学习笔记</p>
+
+<h1 id="table-of-contents"></h1><nav id="TableOfContents">
+<ul>
+<li><a href="#周报">周报</a></li>
+<li><a href="#python教程">Python教程</a>
+<ul>
+<li><a href="#1-函数">1. 函数</a>
+<ul>
+<li><a href="#1-1-演练-打印分隔线">1.1 演练：打印分隔线</a></li>
+</ul></li>
+<li><a href="#2-模块">2. 模块</a>
+<ul>
+<li><a href="#2-1-概念">2.1 概念</a></li>
+<li><a href="#2-2-演练-调用模块">2.2 演练：调用模块</a></li>
+<li><a href="#2-3-pyc文件">2.3 pyc文件</a></li>
+</ul></li>
+<li><a href="#3-高级变量">3. 高级变量</a>
+<ul>
+<li><a href="#3-1-列表list">3.1 列表list</a></li>
+<li><a href="#3-2-元组tuple">3.2 元组tuple</a></li>
+<li><a href="#3-3-字典dict">3.3 字典dict</a></li>
+<li><a href="#3-4-字符串">3.4 字符串</a>
+<ul>
+<li><a href="#1-字符串的常用操作">1. 字符串的常用操作：</a></li>
+<li><a href="#2-判断空白字符的方法">2. 判断空白字符的方法：</a></li>
+<li><a href="#3-判断数字的三个方法">3. 判断数字的三个方法：</a></li>
+<li><a href="#4-字符串的查找和替换">4. 字符串的查找和替换：</a></li>
+<li><a href="#5-字符串的文字对齐方法">5. 字符串的文字对齐方法:</a></li>
+<li><a href="#6-去除字符串中的空白字符">6. 去除字符串中的空白字符：</a></li>
+<li><a href="#7-拆分和拼接字符串">7. 拆分和拼接字符串：</a></li>
+<li><a href="#8-列表与字符串的相互转换">8. 列表与字符串的相互转换：</a></li>
+<li><a href="#9-字符串的切片">9. 字符串的切片：</a></li>
+</ul></li>
+<li><a href="#3-5-公共方法">3.5 公共方法</a>
+<ul>
+<li><a href="#完整的-for-循环语法">完整的 for 循环语法</a></li>
+</ul></li>
+<li><a href="#3-6-数字-转化为-时间格式">3.6 数字 转化为 时间格式</a></li>
+<li><a href="#3-7-综合练习-名片管理系统">3.7 综合练习——名片管理系统</a></li>
+</ul></li>
+<li><a href="#4-变量进阶">4. 变量进阶</a>
+<ul>
+<li><a href="#4-1-变量的引用">4.1 变量的引用</a></li>
+<li><a href="#4-2-可变和不可变类型">4.2 可变和不可变类型</a></li>
+<li><a href="#4-3-局部变量和全局变量">4.3 局部变量和全局变量</a>
+<ul>
+<li>
+<ul>
+<li><a href="#在函数内部修改全局变量的值">在函数内部修改全局变量的值</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#4-4-函数的返回值">4.4 函数的返回值</a></li>
+<li><a href="#4-5-函数的参数-进阶">4.5 函数的参数 进阶</a>
+<ul>
+<li><a href="#例外情况">例外情况： +=</a></li>
+<li><a href="#4-6-多值参数">4.6 多值参数</a></li>
+<li><a href="#4-7-函数的递归">4.7 函数的递归</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#5-面向对象">5. 面向对象</a>
+<ul>
+<li><a href="#5-1-类-和-对象">5.1 类 和 对象</a>
+<ul>
+<li><a href="#1-类-和-对象-的关系">1. 类 和 对象 的关系</a></li>
+<li><a href="#2-类的设计">2. 类的设计</a></li>
+</ul></li>
+<li><a href="#5-2-面向对象基础语法">5.2 面向对象基础语法</a>
+<ul>
+<li><a href="#1-dir内置函数">1.dir内置函数</a></li>
+<li><a href="#2-定义简单的类">2.定义简单的类</a></li>
+<li><a href="#3-方法中的self参数">3.方法中的self参数</a></li>
+<li><a href="#4-初始化方法">4.初始化方法</a>
+<ul>
+<li><a href="#在初始化方法内部定义属性">在初始化方法内部定义属性</a></li>
+<li><a href="#初始化方法的改造-初始化的同时设置初始值">初始化方法的改造——初始化的同时设置初始值</a></li>
+</ul></li>
+<li><a href="#5-内置方法和属性">5.内置方法和属性</a></li>
+</ul></li>
+<li><a href="#5-3-面向对象封装案例">5.3 面向对象封装案例</a>
+<ul>
+<li>
+<ul>
+<li><a href="#封装">封装</a></li>
+</ul></li>
+<li><a href="#案例一-小明爱跑步">案例一：小明爱跑步</a></li>
+<li><a href="#案例二-摆放家具">案例二：摆放家具</a></li>
+<li><a href="#案例三-士兵突击">案例三：士兵突击</a></li>
+</ul></li>
+<li><a href="#5-4-案例中的知识点">5.4 案例中的知识点</a>
+<ul>
+<li>
+<ul>
+<li><a href="#none和身份运算符">None和身份运算符</a></li>
+<li><a href="#is-与-的区别">is 与 == 的区别：</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#5-5-私有属性和私有方法">5.5 私有属性和私有方法</a></li>
+<li><a href="#5-6-继承">5.6 继承</a>
+<ul>
+<li><a href="#1-单继承">1.单继承</a></li>
+<li><a href="#2-方法的重写">2.方法的重写</a>
+<ul>
+<li><a href="#1-覆盖父类的方法">1) 覆盖父类的方法</a></li>
+<li><a href="#2-对父类方法进行-扩展">2) 对父类方法进行 扩展</a></li>
+</ul></li>
+<li><a href="#3-父类的-私有属性-和-私有方法">3. 父类的 私有属性 和 私有方法</a></li>
+<li><a href="#4-多继承">4.多继承</a></li>
+<li><a href="#python-中的-mro-方法搜索顺序">Python 中的 MRO —— 方法搜索顺序</a></li>
+</ul></li>
+<li><a href="#5-7-多态">5.7 多态</a></li>
+<li><a href="#5-8-类属性">5.8 类属性</a>
+<ul>
+<li><a href="#1-类的结构">1. 类的结构</a></li>
+<li><a href="#2-类是一个特殊的对象">2. 类是一个特殊的对象</a></li>
+<li><a href="#3-类属性和实例属性">3. 类属性和实例属性</a></li>
+<li><a href="#4-类方法和静态方法">4. 类方法和静态方法</a></li>
+</ul></li>
+<li><a href="#5-9-单例">5.9 单例</a></li>
+</ul></li>
+<li><a href="#6-异常">6. 异常</a>
+<ul>
+<li><a href="#6-1-异常的概念">6.1 异常的概念</a></li>
+<li><a href="#6-2-捕获异常">6.2 捕获异常</a>
+<ul>
+<li><a href="#1-简单的捕获异常语法">1. 简单的捕获异常语法</a></li>
+<li><a href="#2-错误类型捕获">2.错误类型捕获</a></li>
+<li><a href="#3-异常捕获完整语法">3. 异常捕获完整语法</a></li>
+<li><a href="#4-异常的传递">4.异常的传递</a></li>
+<li><a href="#5-抛出-raise-异常">5. 抛出 raise 异常</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#7-模块和包">7. 模块和包</a>
+<ul>
+<li><a href="#7-1-模块">7.1 模块</a>
+<ul>
+<li><a href="#1-模块的概念">1. 模块的概念</a></li>
+<li><a href="#2-模块的两种导入方式">2. 模块的两种导入方式</a></li>
+<li><a href="#3-name">3. <code>__name__</code></a></li>
+</ul></li>
+<li><a href="#7-2-包-package">7.2 包（package）</a></li>
+</ul></li>
+<li><a href="#8-文件">8. 文件</a>
+<ul>
+<li><a href="#8-1-文件的概念">8.1 文件的概念</a></li>
+<li><a href="#8-2-文件的基本操作">8.2 文件的基本操作</a>
+<ul>
+<li><a href="#1-read方法-读取文件">1. read方法——读取文件</a></li>
+<li><a href="#2-打开文件的几种方式">2. 打开文件的几种方式</a></li>
+<li><a href="#3-按行读取文件内容">3. 按行读取文件内容</a></li>
+<li><a href="#4-读写案例-复制文件">4. 读写案例——复制文件</a></li>
+</ul></li>
+<li><a href="#8-3-文件-目录的常用管理操作">8.3 文件/目录的常用管理操作</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+<hr />
+
+<h1 id="周报">周报</h1>
+
+<h1 id="python教程">Python教程</h1>
+
+<h2 id="1-函数">1. 函数</h2>
+
+<h3 id="1-1-演练-打印分隔线">1.1 演练：打印分隔线</h3>
+
+<pre><code class="language-python">def print_line(char, times):
+    &quot;&quot;&quot;打印单行分隔线
+
+    :param char: 分隔字符
+    :param times: 重复次数
+    &quot;&quot;&quot;
+    print(char * times)
+
+def print_lines(char, times, rows):
+    &quot;&quot;&quot;打印多行分隔线
+    :param rows: 分隔线的行数
+    :param char: 分隔线使用的字符
+    :param times: 分隔线重复的次数
+    &quot;&quot;&quot;
+    row = 0
+
+    while row &lt; rows:
+        print_line(char, times)
+        row += 1
+
+print_lines('-', 50,5)
+</code></pre>
+
+<hr />
+
+<h2 id="2-模块">2. 模块</h2>
+
+<h3 id="2-1-概念">2.1 概念</h3>
+
+<p>模块：每一个扩展名为.py 的文件都是一个 模块
+使用import加模块名 导入模块进行使用，模块中定义的全局变量、函数 都可以直接被使用。</p>
+
+<h3 id="2-2-演练-调用模块">2.2 演练：调用模块</h3>
+
+<p>调用上一节的打印分隔线模块：</p>
+
+<pre><code class="language-python">import hm_08_分隔线模块
+
+```python
+# 使用模块中的函数
+hm_08_分隔线模块.print_line('-', 50)
+
+# 使用模块中的变量
+print(hm_08_分隔线模块.name)
+</code></pre>
+
+<h3 id="2-3-pyc文件">2.3 pyc文件</h3>
+
+<p>由Python解释器将 模块的源码 转换为 字节码，可以提高程序运行的速度。</p>
+
+<p>Python解释源程序的步骤：
+1.将源代码编译，生成一个二进制 字节码
+2.将 字节码 生成CPU可以识别的 机器码</p>
+
+<hr />
+
+<h2 id="3-高级变量">3. 高级变量</h2>
+
+<h3 id="3-1-列表list">3.1 列表list</h3>
+
+<p>列表类似C语言中的数组，在Python中使用很频繁，它专门用于存储一串信息。
+定义方式：<code>name = [‘zhangsan’, ‘lisi’, ‘wangwu’]</code></p>
+
+<p>list的基本用法:
+name_list = [&lsquo;zhangsan&rsquo;,&lsquo;lisi&rsquo;,&lsquo;wangwu&rsquo;]</p>
+
+<pre><code class="language-python"># 1.取值和取索引
+print(name_list[2])
+
+# 2.确定某一数据在列表中的位置
+print(name_list.index('wangwu'))
+
+# 3.修改列表中的元素
+name_list[1] = 'xiaoer'
+
+# 4.增加数据
+# append 向列表的末尾添加元素
+name_list.append('www')
+
+#insert 在列表的指定索引位置插入元素
+name_list.insert(1,'xiaomei')
+
+#extend 把其他列表的完整内容追加到当前列表的末尾
+temp_list = ['sun', 'zhu','sha']
+name_list.extend(temp_list)
+
+# 5.删除数据
+# remove 删除列表中的指定元素(若该元素值有多个，则删除第一个出现的元素)
+name_list.remove('wangwu')
+
+# pop 默认删除最后一个元素，也可以指定索引位置
+name_list.pop()
+name_list.pop(2)
+
+# clear 清空列表所有数据
+name_list.clear()
+
+print (name_list)
+
+</code></pre>
+
+<p>关键字del：</p>
+
+<pre><code class="language-python">name_list = ['张三','李四','王五']
+
+# del关键字 删除列表元素
+del name_list[1]
+
+# del 本质上是将一个变量从内存中删除
+# 一般，使用列表的方法删除数据，不用def关键字
+print(name_list)
+</code></pre>
+
+<p>列表的数据统计方法：</p>
+
+<pre><code class="language-python">name_list = ['张三','李四','王五','张三']
+
+# len 函数可以统计列表中元素的总数
+list_len = len(name_list)
+print('列表中包含 %d 个元素' % list_len)
+
+# count 可以统计列表中某一个数据出现的次数
+count = name_list.count('张三')
+print('张三出现了 %d 次' % count)
+
+
+</code></pre>
+
+<p>列表的排序方法：</p>
+
+<pre><code class="language-python">name_list = ['zhangsan','lisi','wangwu']
+num_list = [6,8,1,4,10]
+
+# 列表升序排列
+name_list.sort()
+num_list.sort()
+
+# 降序排列
+name_list.sort(reverse=True)
+num_list.sort(reverse=True)
+
+# 逆序排列(翻转)
+name_list.reverse()
+num_list.reverse()
+
+print(name_list)
+print(num_list)
+</code></pre>
+
+<p><strong>迭代遍历</strong>
+遍历：从头到尾 依次从 list 中获取数据
+     在循环体内部 针对每一个元素执行相同的操作
+     本节中使用 <strong>for循环</strong> 实现迭代遍历</p>
+
+<p>列表的应用场景：
+1. 存储相同类型的数据（当然列表可以存储不同类型的数据）
+2. 通过迭代遍历，在循环体内部对列表的每一项元素执行相同的操作</p>
+
+<h3 id="3-2-元组tuple">3.2 元组tuple</h3>
+
+<p>元组与列表类似，不同之处在于元组的 元素 不能修改</p>
+
+<p>元组的定义：</p>
+
+<pre><code class="language-python"># 使用 () 进行元组的定义
+info_tuple = ('zhangsan', 24, 1.75)
+
+# 定义只包含 一个元素 的元组，需加一个逗号
+single_tuple = (10,)
+
+</code></pre>
+
+<p>元组的基本操作与列表类似（但是不能对元素进行更改）：</p>
+
+<pre><code class="language-python"># 取值和取索引
+print(info_tuple[0])
+print(info_tuple.index(1.75))
+
+# 统计某数据的次数
+print(info_tuple.count('zhangsan'))
+
+# 统计包含全部元素的个数
+print(len(info_tuple))
+</code></pre>
+
+<p>循环遍历：</p>
+
+<pre><code class="language-python">info_tuple = ('zhangsan', 24, 1.75)
+
+# 使用迭代遍历元组
+for my_info in info_tuple:
+    
+    print(my_info)
+</code></pre>
+
+<p>元组的应用场景：
+1. 作为函数的 参数 和 返回值
+2. 格式字符串，格式化字符串后面的()本质上就是一个元组</p>
+
+<pre><code class="language-python">#  格式化字符串后的 () 本质上就是元组
+info_tuple = ('小明', 25, 1.75)
+print(&quot;%s 年龄是 %d 身高是 %.2f&quot; % info_tuple)
+
+#info_str 是‘格式字符串’
+info_str = &quot;%s 年龄是 %d 身高是 %.2f&quot; % info_tuple
+print(info_str)
+</code></pre>
+
+<ol>
+<li>让列表不可以被修改，保护数据安全</li>
+</ol>
+
+<p>元组和列表之间的转换:
+list():把元组转换成列表
+tuple():把列表转换成元组</p>
+
+<h3 id="3-3-字典dict">3.3 字典dict</h3>
+
+<ul>
+<li>字典可以用来 存储多个数据</li>
+<li>常用于存储 描述一个物体的相关信息</li>
+</ul>
+
+<p>与列表的区别：
+- 列表是 有序 的对象集合
+- 字典是 无序 的对象集合</p>
+
+<p>字典的定义：
+- 用大括号{}定义
+- 使用 键值对 存储数据，每个键值对之间用，分隔
+- 键key是 索引
+- 值value是 数据
+- 键和值用：分隔
+- 键必须唯一
+- 值可以取任何数据类型，键只能取 字符串、数字、元组</p>
+
+<pre><code class="language-python"># 字典是一个无序的数据集合，所以用print函数输出时，顺序可能和定义的不一样
+xiaoming = {'name':'小明',
+            'age':24,
+            'gender':True,
+            'height':1.75,
+            'weight':70.25}
+
+print(xiaoming)
+</code></pre>
+
+<p>字典dict的基本使用：</p>
+
+<pre><code class="language-python">xiaoming_dict = {'name':'小明'}
+
+# 1. 取值
+print(xiaoming_dict['name'])
+
+# 2. 增加/修改
+# 在[]中填入要增加/修改的key键
+# 如果key不存在，则新增一个键值对
+xiaoming_dict['age'] = 24
+# 如果key存在，则修改该key的value
+xiaoming_dict['name'] = '大明'
+
+# 3. 删除
+xiaoming_dict.pop('name')
+
+print(xiaoming_dict)
+</code></pre>
+
+<p>字典dict的其他常用操作：</p>
+
+<pre><code class="language-python">xiaoming_dict = {'name':'小明',
+                 'age': 18}
+
+# 1. 用len函数统计键值对的数量
+print(len(xiaoming_dict))
+
+# 2. 用update合并两个字典
+temp_dict = {'height': 1.75}
+# 注意:如果被合并的字典（temp_dict）中包含已经存在的键值对，会覆盖原有键值对
+xiaoming_dict.update(temp_dict)
+
+# 3. 用clear清空字典所有数据
+xiaoming_dict.clear()
+
+print(xiaoming_dict)
+</code></pre>
+
+<p>字典的循环遍历：</p>
+
+<pre><code class="language-python">xiaoming_dict = {'name':'小明',
+                 'qq':'123456',
+                 'phone':'10000'}
+
+# 迭代遍历字典
+# 变量k是每次循环中获取到的键值对的key
+for k in xiaoming_dict:
+    print('%s - %s' % (k, xiaoming_dict[k]))
+</code></pre>
+
+<p>字典的应用场景:
+- 使用多个键值对，存储 描述一个物体的相关信息
+- 将多个字典放在一个 列表哦 中，再进行遍历，对每个字典做相同的处理</p>
+
+<pre><code class="language-python"># 字典的循环遍历
+card_list = [
+    {'name': '张三',
+     'qq': '123456',
+     'phone': '10000'},
+    {'name': '李四',
+     'qq': '654321',
+     'phone': '10086'}
+]
+
+for card_info in card_list:
+    print(card_info)
+</code></pre>
+
+<h3 id="3-4-字符串">3.4 字符串</h3>
+
+<p>字符串 就是一串字符，用于表示文本。</p>
+
+<pre><code class="language-python"># 字符串的定义，若字符串内要用“”，则用''定义，反之同理
+str1 = 'hello python'
+str2 = '今天是&quot;星期六&quot;'
+
+# 取字符串的指定位置的元素
+print(str1[6])
+
+# 字符串的循环遍历
+for char in str2:
+    print(char)
+</code></pre>
+
+<h4 id="1-字符串的常用操作">1. 字符串的常用操作：</h4>
+
+<pre><code class="language-python">hello_str = 'hello hello'
+
+# 1. 统计字符串的长度
+print(len(hello_str))
+
+# 2. 统计某一个小（子）字符串出现的次数
+print(hello_str.count('he'))
+
+# 3. 某一个子字符串出现的位置
+print(hello_str.index('llo'))
+</code></pre>
+
+<h4 id="2-判断空白字符的方法">2. 判断空白字符的方法：</h4>
+
+<pre><code class="language-python"># 1. 判断空白字符
+space_str = &quot;    &quot;
+# 使用 isspace()可以判断字符串是否只包含空格
+# 如果string中只有空白字符（空格、\t、\n、\r），则返回True
+print(space_str.isspace())
+</code></pre>
+
+<h4 id="3-判断数字的三个方法">3. 判断数字的三个方法：</h4>
+
+<pre><code class="language-python"># 2. 使用三种方法判断字符串中是否只包含数字
+num_str = '1'
+# 三种方法都不能判断小数
+# isdecimal只能判断单纯的数字
+print(num_str.isdecimal())
+# isdigit可以判断单纯的数字、Unicode字符串
+print(num_str.isdigit())
+# isnumeric可以判断单纯的数字、中文数字
+print(num_str.isnumeric())
+</code></pre>
+
+<h4 id="4-字符串的查找和替换">4. 字符串的查找和替换：</h4>
+
+<pre><code class="language-python">hello_str = 'hello world'
+
+# 1. 判断是否以指定字符串开始
+print(hello_str.startswith('hello'))
+
+# 2. 判断是否以指定字符串结束
+print(hello_str.endswith('ld'))
+
+# 3. 查找指定的字符串并返回其索引位置
+# find 与 index 类似
+print(hello_str.find('lo'))
+
+# 4. 替换字符串
+# replace执行完成后，会返回一个新的字符串，但不会修改原字符串
+print(hello_str.replace('world','python'))
+</code></pre>
+
+<h4 id="5-字符串的文字对齐方法">5. 字符串的文字对齐方法:</h4>
+
+<pre><code class="language-python"># 将下列诗词居中对齐
+poem = ['登鹤雀楼',
+        '王之涣',
+        '白日依山尽',
+        '黄河入海流',
+        '欲穷千里目',
+        '更上一层楼']
+
+for poem_str in poem:
+
+    print('|%s|' % poem_str.center(10,'　'))
+</code></pre>
+
+<p>以上代码的输出结果是：
+|　　　登鹤雀楼　　　|
+|　　　王之涣　　　　|
+|　　白日依山尽　　　|
+|　　黄河入海流　　　|
+|　　欲穷千里目　　　|
+|　　更上一层楼　　　|</p>
+
+<h4 id="6-去除字符串中的空白字符">6. 去除字符串中的空白字符：</h4>
+
+<pre><code class="language-python"># 去除下列字符串中的空白字符
+# 将下列诗词居中对齐
+poem = ['\n登鹤雀楼 ',
+        '王之涣\t\n',
+        '白日依山尽',
+        '黄河入海流 ',
+        ' 欲穷千里目',
+        '  更上一层楼']
+
+for poem_str in poem:
+
+    print('|%s|' % poem_str.strip().center(10,'　'))
+</code></pre>
+
+<h4 id="7-拆分和拼接字符串">7. 拆分和拼接字符串：</h4>
+
+<p>拆分：
+<strong>split()函数</strong>（也可以用于 字符串 转换为 列表）
+语法：<code>str.split(str=&quot;&quot;,num=string.count(str))[n]</code></p>
+
+<p>参数说明：
+str：表示为分隔符，默认为空格，但是不能为空(&ldquo;)。若字符串中没有分隔符，则把整个字符串作为列表的一个元素
+num：表示分割次数。如果存在参数num，则仅分隔成 num+1 个子字符串，并且每一个子字符串可以赋给新的变量
+[n]：表示选取第n个分片</p>
+
+<pre><code class="language-python"># 1. 将字符串中的空白字符全部去掉
+# 2. 使用’ ‘作为分隔符，拼接成一个整齐的字符串
+poem_str = '登鹤雀楼\t 王之涣 \t 白日依山尽 \t\n 黄河入海流'
+
+print(poem_str)
+
+# 1. 使用split拆分字符串
+# string.split(str='',num)
+# 以 str 为分隔符拆分string，str默认包含空白符
+# 如果 num 有指定值，则仅分隔成num+1个子字符串
+poem_list = poem_str.split()
+print(poem_list)
+
+# 2. 使用join
+# string.join()
+# 以string为分隔符，将sqe中的元素合并为一个新的字符串
+result = ' '.join(poem_list)
+print(result)
+</code></pre>
+
+<h4 id="8-列表与字符串的相互转换">8. 列表与字符串的相互转换：</h4>
+
+<p>str&mdash;&gt;list：
+list()函数、split方法</p>
+
+<pre><code class="language-python">
+str1 = &quot;12345&quot;
+list1 = list(str1)
+print list1
+ 
+str2 = &quot;123 sjhid dhi&quot;
+list2 = str2.split() #or list2 = str2.split(&quot; &quot;)
+print list2
+ 
+str3 = &quot;www.google.com&quot;
+list3 = str3.split(&quot;.&quot;)
+print list3
+</code></pre>
+
+<p>输出结果：</p>
+
+<p>[&lsquo;1&rsquo;, &lsquo;2&rsquo;, &lsquo;3&rsquo;, &lsquo;4&rsquo;, &lsquo;5&rsquo;]
+[&lsquo;123&rsquo;, &lsquo;sjhid&rsquo;, &lsquo;dhi&rsquo;]
+[&lsquo;www&rsquo;, &lsquo;google&rsquo;, &lsquo;com&rsquo;]</p>
+
+<p><strong>list&mdash;&gt;str</strong></p>
+
+<pre><code class="language-python">
+str4 = &quot;&quot;.join(list3)
+print str4
+str5 = &quot;.&quot;.join(list3)
+print str5
+</code></pre>
+
+<p>输出结果：</p>
+
+<p>wwwgooglecom
+www.google.com</p>
+
+<h4 id="9-字符串的切片">9. 字符串的切片：</h4>
+
+<p><strong>切片</strong> 方法适用于 字符串、列表、元组
+切片指定的区域是 左闭右开：从起始位开始到结束位的前一位结束（不包含结束位）</p>
+
+<p>切片操作的演练：
+已有一个字符串 num_str
+1. 截取从2 - 5位置 的字符串     num_str[2:6]
+2. 截取从2 - 末尾 的字符串      num_str[2:]
+3. 截取从开始 - 末尾 的字符串（完整字符串）  num_str[:]
+4. 从开始位置，每隔一个字符截取字符串   num_str[::2]
+5. 截取从 2 - 倒数第二个字符 的字符串   num_str[2:-1]
+6. 截取字符串末尾两个字符       num_str[-2:]
+7. 字符串的逆序                num_str[::-1]</p>
+
+<hr />
+
+<h3 id="3-5-公共方法">3.5 公共方法</h3>
+
+<p>列表、元组、字典、字符串都可以用的共同方法。</p>
+
+<p><strong>Python的内置函数：</strong>
+len()  计算容器中元素的个数
+del()  删除变量/元素
+max()  返回容器中的最大值
+min()  返回容器中的最小值</p>
+
+<p><strong>切片：</strong>
+切片不可以用于 字典dict，因为 字典 是一个 无序 的集合。·</p>
+
+<p><strong>算数运算符</strong></p>
+
+<p>| 运算符 | Python 表达式 | 结果 | 描述 | 支持的数据类型 |
+| :&mdash;: | &mdash; | &mdash; | &mdash; | &mdash; |
+| + | [1, 2] + [3, 4] | [1, 2, 3, 4] | 合并 | 字符串、列表、元组 |
+| * | [&ldquo;Hi!&rdquo;] * 4 | [&lsquo;Hi!&rsquo;, &lsquo;Hi!&rsquo;, &lsquo;Hi!&rsquo;, &lsquo;Hi!&rsquo;] | 重复 | 字符串、列表、元组 |
+| in | 3 in (1, 2, 3) | True | 元素是否存在 | 字符串、列表、元组、字典 |
+| not in | 4 not in (1, 2, 3) | True | 元素是否不存在 | 字符串、列表、元组、字典 |
+| &gt; &gt;= == &lt; &lt;= | (1, 2, 3) &lt; (2, 2, 3) | True | 元素比较 | 字符串、列表、元组 |</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; [1, 2] * 5
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+
+&gt;&gt;&gt; (1,2,3) * 2
+(1, 2, 3, 1, 2, 3)
+
+&gt;&gt;&gt; 'hello' + 'python'
+'hellopython'
+
+&gt;&gt;&gt; [1,2] + [3,4]
+[1, 2, 3, 4]
+</code></pre>
+
+<pre><code class="language-python">&gt;&gt;&gt; 'a' in 'abcdef'
+True
+&gt;&gt;&gt; 'g' not in 'abcdef'
+True
+&gt;&gt;&gt; 1 in [0,1,2]
+True
+&gt;&gt;&gt; 'a' in {'a':'wang','b':'li'}
+True
+</code></pre>
+
+<p>注意
+- in 在对 字典 操作时，判断的是 字典的键
+- in 和 not in 被称为 成员运算符</p>
+
+<h4 id="完整的-for-循环语法">完整的 for 循环语法</h4>
+
+<pre><code class="language-python">for 变量 in 集合
+	循环体代码
+else:
+	若没有用break退出循环，在循环结束时执行本行代码
+</code></pre>
+
+<pre><code class="language-python">for num in [1, 2, 3]:
+    print(num)
+    if num == 2:
+        break
+else:
+    # 如果循环体内部用break退出了循环
+    # else下方的代码就不会被执行
+    print('else块代码')
+</code></pre>
+
+<p>这种 for 循环语法的** 应用场景**：
+- 在 迭代遍历 嵌套的数据类型时，例如 一个列表包含了多个字典
+- 需求：要判断 某一个字典中 是否存在 指定的 值
+    - 如果 存在，提示并且退出循环
+    - 如果 不存在，在 循环整体结束 后，希望 得到一个统一的提示</p>
+
+<pre><code class="language-python">students = [
+    {'name':'li'},
+    {'name':'wang'}
+]
+
+# 在学生列表中搜索指定的姓名
+find_name = 'zhang'
+
+for stu_dict in students:
+    print(stu_dict)
+
+    if stu_dict['name'] ==  find_name:
+        print('找到了 %s' % find_name)
+        break
+else:
+    print('没有找到 %s' % find_name)
+
+print('循环结束')
+</code></pre>
+
+<p><strong>PASS关键字</strong>
+如果不想立刻写语句分支内部的代码，可以先使用 pass 关键字。PASS表示一个占位符，它不会执行任何操作，且能够保证代码结构正确，让代码不报错！</p>
+
+<pre><code class="language-python">if a &gt; 0:
+	pass
+else:
+	pass
+</code></pre>
+
+<p><strong>TODO注释</strong>
+TODO:对注释进行标记，用于标记此处有需要去做的工作还未做。</p>
+
+<pre><code class="language-python">    # TODO（名字） 如果在项目开发过程中，有功能暂未完成，仍待开发，可以使用TODO
+</code></pre>
+
+<h3 id="3-6-数字-转化为-时间格式">3.6 数字 转化为 时间格式</h3>
+
+<p>需要导入 dateutil 包</p>
+
+<pre><code class="language-python">from dateutil.parser import parse
+
+time_num = 20160117030000
+
+# parse是将字符串转换为datetime
+time_str = str(time_num)
+
+time = parse(time_str)
+</code></pre>
+
+<pre><code class="language-python">print(time)
+2016-01-17 03:00:00
+</code></pre>
+
+<h3 id="3-7-综合练习-名片管理系统">3.7 综合练习——名片管理系统</h3>
+
+<p>详见 06_名片管理系统 工程文件</p>
+
+<h2 id="4-变量进阶">4. 变量进阶</h2>
+
+<h3 id="4-1-变量的引用">4.1 变量的引用</h3>
+
+<ul>
+<li>变量 和 数据 都是保存在 <strong>内存</strong> 中的</li>
+<li>在python中函数的 参数传递 以及 返回值 都是靠 <strong><em>引用</em></strong> 传递的</li>
+</ul>
+
+<p><strong>引用的概念</strong>
+- 变量 和 数据 是分开存储的
+- 数据 保存在 内存 中的一个位置
+- 变量 中保存着数据在内存中的地址
+- 变量 中记录数据的地址，就叫做<strong><em>引用</em></strong>
+- 使用id()函数可以查看变量中保存数据所在的 内存地址</p>
+
+<p><strong>&loz;注意：如果变量已经被定义，当给一个变量赋值的时候，本质上是 修改了数据的引用</strong></p>
+
+<pre><code class="language-python">def test(num):
+    print('在函数内部 %d 对应的内存地址是 %d' % (num, id(num)))
+
+    # 1&gt; 定义一个字符串变量
+    result = 'hello'
+
+    print(&quot;函数要返回数据的内存地址是 %d&quot; % id(result))
+    # 2&gt; 将字符串变量返回
+    return result
+
+# 1. 定义一个数字的变量
+a = 10
+
+# 数据的地址本质上就是一个数字
+print('a 变量保存数据的内存地址是 %d' % id(a))
+
+# 2. 调用test函数,本质上传递的是实参保存数据的引用，而不是实参保存的数据
+# 注意：如果函数有返回值，但是没有定义变量接收
+# 程序不会报错，但是无法获得返回结果
+r = test(a)
+print('%s 的内存地址是 %d' % (r,id(r)))
+</code></pre>
+
+<p>上述程序的执行结果是：
+a 变量保存数据的内存地址是 1908698416
+在函数内部 10 对应的内存地址是 1908698416
+函数要返回数据的内存地址是 1469963397584
+hello 的内存地址是 1469963397584</p>
+
+<hr />
+
+<p>由结果可知，不论是变量传入函数，还是函数的返回值，只要数据值不变，其地址是不变的。
+函数的 实参/返回值 都是是靠 引用 来传递来的</p>
+
+<h3 id="4-2-可变和不可变类型">4.2 可变和不可变类型</h3>
+
+<ul>
+<li>不可变类型，内存中的数据不允许被修改：
+
+<ul>
+<li>数字类型 int, bool, float, complex, long(2.x)</li>
+<li>字符串 str</li>
+<li>元组 tuple</li>
+</ul></li>
+<li>可变类型，内存中的数据可以被修改：
+
+<ul>
+<li>列表 list</li>
+<li>字典 dict</li>
+</ul></li>
+</ul>
+
+<p><em>| 注意：字典的 key 只能使用不可变类型的数据</em>
+<em>使用方法对可变类型的变量进行修改，不会改变其地址</em></p>
+
+<p><strong>哈希hash</strong>
+- python中内置有一个 hash()的函数
+    -   接收一个 不可变类型 的数据作为 参数
+    -   返回 结果是一个 整数
+- 哈希 是一种 算法，其作用就是提取数据的 特征码（指纹)
+- 设置字典的键值对时，会首先对 key 进行 hash来决定如何在内存中保存字典的数据，以方便后续对字典的操作：增、删、改、查</p>
+
+<h3 id="4-3-局部变量和全局变量">4.3 局部变量和全局变量</h3>
+
+<p>局部变量：在函数内部定义的变量，只能在函数内部使用
+全局变量：在函数外部定义的变量，所有函数内部都可以使用</p>
+
+<p>** 注意！函数执行时处理变量的过程：**
+1. 首先查找 函数内部 是否存在指定名称的 局部变量，如果有就直接使用
+2. 如果没有，查找 函数外部 是否存在 指定名称的 全局变量，如果有就直接使用
+3. 如果仍没有，程序报错</p>
+
+<p><strong>局部变量</strong>
+局部变量的生命周期：</p>
+
+<pre><code class="language-python">def demo1():
+
+    # 定义一个局部变量
+    # 1&gt; 变量的出生：执行了下方代码后，才会被创建
+    # 2&gt; 死亡：函数执行结束后被系统回收
+    num = 10
+
+    print('在demo1函数内部的变量是 %d' % num)
+    
+demo1()
+</code></pre>
+
+<ul>
+<li>局部变量 是在 函数内部 定义的变量，只能在函数内部使用</li>
+<li>函数执行结束后，函数内部的局部变量会被系统回收</li>
+<li>不同的函数可以定义相同名字的局部变量，但是彼此之间不会产生影响</li>
+</ul>
+
+<p><strong>全局变量</strong>
+- 全局变量是在 函数外部定义 的变量，所有函数都可以使用这个变量
+- 在函数内部，可以 通过全局变量的引用获取对应的数据
+- 无法在函数内部直接修改全局变量的值</p>
+
+<h5 id="在函数内部修改全局变量的值">在函数内部修改全局变量的值</h5>
+
+<p>如果在函数内部需要修改 全局变量 的值，使用 global关键字：</p>
+
+<pre><code class="language-python"># 全局变量
+num = 10
+
+
+def demo1():
+
+    # 想要修改全局变量的值 - 使用global声明一下变量即可
+    # global关键字 会告诉解释器后面的变量是一个全局变量
+    global  num
+    num = 99
+    print('demo1 ==&gt; %d' % num)
+
+def demo2():
+
+    print('demo2 ==&gt; %d' % num)
+
+demo1()
+demo2()
+
+</code></pre>
+
+<p>程序输出的结果:
+<code>demo1 ==&gt; 99
+demo2 ==&gt; 99</code></p>
+
+<p>在编写代码时，我们需要在代码一开始就 定义完成全局变量，否则若在执行函数时变量没有定义，程序就会报错。</p>
+
+<table>
+<thead>
+<tr>
+<th>代码结构示意图</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>shebang</td>
+</tr>
+
+<tr>
+<td>import模块</td>
+</tr>
+
+<tr>
+<td>全局变量</td>
+</tr>
+
+<tr>
+<td>执行代码</td>
+</tr>
+</tbody>
+</table>
+
+<p>全局变量命名的建议：
+全局变量名之前应该加<code>g_</code>或 <code>gl_</code>的前缀</p>
+
+<h3 id="4-4-函数的返回值">4.4 函数的返回值</h3>
+
+<p>利用 元组 返回多个返回值：</p>
+
+<pre><code class="language-python">def measure():
+    &quot;&quot;&quot;测量温度和湿度&quot;&quot;&quot;
+
+    print('begin...')
+    temp = 39
+    print('over...')
+    wetness = 50
+    # 元组可以包含多个数据，可以让函数返回多个值
+    # return (temp,wetness)可以省略括号
+    return temp,wetness
+
+result = measure()
+print(result)
+</code></pre>
+
+<pre><code class="language-python"># 需要单独的处理温度或者湿度
+# 如果函数返回的类型是元组，同时希望单独的处理元组中的元素
+# 可以使用多个变量，一次接收函数的返回结果
+# 注意:使用多个变量接收结果时，变量的个数应该和元组中元素的个数保持一致
+gl_temp, gl_wewtness = measure()
+
+print(gl_temp)
+print(gl_wewtness)
+</code></pre>
+
+<p><strong>交换两个变量的值</strong>：</p>
+
+<pre><code class="language-python">a = 6
+b = 100
+
+# 解法1： 使用其他变量
+c = a
+a = b
+b = c
+
+# 解法2： 不使用其他变量
+a = a + b
+b = a - b
+a = a - b
+
+# 解法3： Python 专有解法
+# 等号右边是元组，只是省略了小括号
+a, b = b, a
+
+print(a)
+print(b)
+</code></pre>
+
+<h3 id="4-5-函数的参数-进阶">4.5 函数的参数 进阶</h3>
+
+<p><strong>不可变 和 可变 的参数</strong>
+无论传递的参数是 可变（list、dict） 还是 不可变（数字），
+只要针对参数使用赋值语句，会在 函数内部 修改 局部变量 的引用，不会影响到 外部变量 的引用。</p>
+
+<p>如果传递的参数是可变类型（list、dict），在函数内部，使用 方法 修改数据的内容，同样会影响到外部实参。</p>
+
+<pre><code class="language-python">def demo(num_list):
+    print('函数内部的代码')
+
+    # 使用方法修改列表的内容
+    num_list.append(9)
+
+    print(num_list)
+
+    print('函数执行完成')
+
+gl_list = [1,2,3]
+demo(gl_list)
+print(gl_list)
+</code></pre>
+
+<p>这段代码的输出结果是：
+<code>函数内部的代码
+[1, 2, 3, 9]
+函数执行完成
+[1, 2, 3, 9]</code></p>
+
+<h4 id="例外情况">例外情况： +=</h4>
+
+<p>“+=” 符号
+- 对于数字变量而言，是赋值操作，即将左右两边的变量相加再赋值给左边的变量
+- 对于列表变量而言，是方法操作，本质上是在调用列表的 extend方法，即：左边.extend(右边)
+&#79;因此，在函数内部对传入的参数使用 += 符号时，若传入的参数是数字变量，则对外部实参没有影响；如果传入的参数是 列表变量，则会对外部实参有影响。</p>
+
+<pre><code class="language-python">def demo(num,num_list):
+    print('begin')
+
+	#对 数字变量使用 +=
+	# num = num + num
+    num += num
+    
+    # 对列表变量使用 += 不是 相加再赋值 ！
+    # 本质上是在调用列表的 extend 方法
+    # num_list.extend(num_list)
+    num_list += num_list
+    print(num)
+    print(num_list)
+    print('over')
+
+gl_num = 9
+gl_list = [1, 2, 3]
+demo(gl_num,gl_list)
+print(gl_num)
+print(gl_list)
+</code></pre>
+
+<p>这段代码的输出结果是：</p>
+
+<pre><code class="language-python">begin
+18
+[1, 2, 3, 1, 2, 3]
+over
+9
+[1, 2, 3, 1, 2, 3]
+</code></pre>
+
+<p><strong>缺省参数</strong>
+具有默认值的参数就是 缺省参数</p>
+
+<p>指定函数的缺省参数：
+- 在参数后使用赋值语句，可以指定参数的缺省值（默认值）
+<code>def func(name, gender=True)</code>
+- 缺省参数的注意事项：
+    - 在函数的参数列表中，带有默认值的缺省参数必须放在列表末尾
+    <strong>错误示例</strong>：<code>def func(name, gender=True, title)</code>
+    - 调用带有多个缺省参数的函数时，需要指定参数名来赋值
+    <code>func('小明',gender=False)</code></p>
+
+<pre><code class="language-python">def print_info(name, title='学生', gender=True):
+    &quot;&quot;&quot;
+
+    :param tiele: 职位
+    :param name: 班上同学的姓名
+    :param gender:True 男生  False 女生
+    &quot;&quot;&quot;
+
+    gender_text = '男生'
+
+    if not gender:
+        gender_text = '女生'
+
+    print('[%s]%s 是 %s' % (title, name, gender_text))
+
+print_info('小明')
+print_info('小美',gender = False)
+
+</code></pre>
+
+<h4 id="4-6-多值参数">4.6 多值参数</h4>
+
+<p><strong>有时可以能需要函数处理的参数的个数是不确定的，此时就可以使用多值参数</strong></p>
+
+<p>python中有 两种 多值参数:</p>
+
+<ul>
+<li>参数名前增加 * 可以接收 元组</li>
+<li>参数名前增加 ** 可以接收 字典</li>
+</ul>
+
+<p>一般在给多值参数命名时，习惯使用以下两个名字
+- *args &ndash; arguments变量的缩写
+- **kwargs &ndash; keyword键值对的缩写</p>
+
+<p>多值参数案例:</p>
+
+<pre><code class="language-python">def sum_numbers(*args):
+
+    num = 0
+
+    print(args)
+
+    for n in args:
+        num += n
+    return num
+
+result = sum_numbers(1, 2, 3, 4, 5)
+print(result)
+</code></pre>
+
+<p>这段代码的输出结果是：</p>
+
+<pre><code class="language-python">(1, 2, 3, 4, 5)
+15
+</code></pre>
+
+<p>元组和字典的拆包：
+在调用带有多值参数的函数时，如果希望
+- 将一个 元组变量，直接传递给 args
+- 将一个 字典变量，直接传递给 kwargs
+就可以使用 拆包，简化参数的传递：
+    - 在元组变量前增加 *
+    - 在字典变量前增加 **</p>
+
+<h4 id="4-7-函数的递归">4.7 函数的递归</h4>
+
+<p>一个函数 在内部调用自己  就是递归。
+代码特点:
+函数内部的 代码 时相同的，只是针对参数的不同，处理的结果不同
+当 参数 满足一个条件时，函数不再执行（就是 递归的出口）
+下面为两个函数递归调用的例子:</p>
+
+<pre><code class="language-python">def sum_number(num):
+
+    print(num)
+
+    #递归的出口:当参数满足某个条件时，不再执行函数
+    if num == 1:
+        return
+    # 自己调用自己
+    sum_number(num - 1)
+
+sum_number(3)
+</code></pre>
+
+<pre><code class="language-python"># 定义一个函数计算1 + 2 + ... + num 的结果
+def sum_numbers(num):
+
+    # 1. 出口
+    if num == 1:
+        return 1
+
+    # 2. 数字的累加
+    temp = sum_numbers(num - 1)
+
+    return num + temp
+
+result = sum_numbers(100)
+print(result)
+</code></pre>
+
+<h2 id="5-面向对象">5. 面向对象</h2>
+
+<p><strong>相比较函数，面向对象 是更大的 封装 ，根据职责在一个对象中 封装 多个方法</strong>
+1. 在完成某一个需求前，首先确定职责——要做的事情（方法）
+2. 根据 职责 确定不同的 对象，在 对象 内部封装不同的方法
+3. 最后完成的代码，就是顺序地让 不同的对象 调用 不同的方法
+** 面向对象编程的特点:**
+1. 注重 对象和职责，不同的对象承担不同的职责
+2. 更加适合应对负责的需求变化，是专门应对复杂项目开发提供的固定套路
+3. 需要在面向过程基础上，再学习一些面向对象的语法</p>
+
+<h3 id="5-1-类-和-对象">5.1 类 和 对象</h3>
+
+<ul>
+<li><strong>类</strong> 是对一群具有相同特征 或者 行为的事物的统称，是抽象的，不能直接使用
+
+<ul>
+<li>特征 被称为 <strong>属性</strong></li>
+<li>行为 被称为 <strong>方法</strong></li>
+</ul></li>
+
+<li><p><strong>类</strong> 就相当于制造飞机时的图纸，是一个 模板，是 <strong>负责创建对象</strong> 的</p></li>
+
+<li><p><strong>对象</strong> 是由 类 创建出来的一个具体存在，可以直接使用</p></li>
+
+<li><p>由 哪一个类 创建出来的 对象，就拥有在 哪一个类 中定义的：属性 方法</p></li>
+
+<li><p>对象 就相当于用图纸制造的飞机</p></li>
+</ul>
+
+<h4 id="1-类-和-对象-的关系">1. 类 和 对象 的关系</h4>
+
+<ul>
+<li>类是模板，对象是根据 类 这个模板创建出来的，应该 <strong>先有类，后有对象</strong></li>
+<li>类 只有一个，而对象可以有很多个
+
+<ul>
+<li>不同的对象之间 属性 可能会各不相同</li>
+</ul></li>
+<li>类 中定义了什么 <strong>属性和方法</strong>，对象中就有什么属性和方法，不会多也不会少</li>
+</ul>
+
+<h4 id="2-类的设计">2. 类的设计</h4>
+
+<p>设计一个 类， 通常需要满足以下三个要素:
+1. 类名：这类事物的名字，满足大驼峰命名法
+2. 属性：这类事物具有什么样的特征
+3. 方法：这类事物具有什么样的行为</p>
+
+<p>①：类名的确定
+名词提炼法 分析 整个业务流程，出现的名词通常就是找到的类</p>
+
+<p>②：属性和方法的确定
+对 对象的特征描述，可以定义为 属性
+对象具有的行为（动词），可以定义为方法</p>
+
+<h3 id="5-2-面向对象基础语法">5.2 面向对象基础语法</h3>
+
+<h4 id="1-dir内置函数">1.dir内置函数</h4>
+
+<p>在python中 对象是几乎无处不在的，变量、数据 、函数都是对象
+方法名为：<code>__方法__</code>格式的方法是 Python提供的 内置方法/属性</p>
+
+<h4 id="2-定义简单的类">2.定义简单的类</h4>
+
+<p>①：定义只包含方法的类：</p>
+
+<pre><code class="language-python">class 类名:
+	def 方法1(self, 参数列表):
+		pass
+		
+	def 方法2(self, 参数列表):
+	pass
+</code></pre>
+
+<p>②：创建对象</p>
+
+<pre><code class="language-python">对象变量 = 类名()
+</code></pre>
+
+<p><strong>第一个面向对象程序</strong>：</p>
+
+<pre><code class="language-python">class Cat:
+
+    def eat(self):
+        print('小猫爱吃鱼')
+
+    def drink(self):
+        print('小猫要喝水')
+
+# 创建猫 对象
+tom = Cat()
+
+tom.eat()
+tom.drink()
+</code></pre>
+
+<p><strong>引用概念的强调</strong>
+在面向对象开发中，引用的概念是同样适用的！</p>
+
+<p>在 Python 中使用类 <strong>创建对象之后</strong>，tom 变量中 仍然记录的是 <strong>对象在内存中的地址</strong>,也就是 tom 变量 引用 了 <strong>新建的猫对象</strong>
+<em>使用 print 输出 对象变量，默认情况下，是能够输出这个变量 引用的对象 是 由哪一个类创建的对象，以及 在内存中的地址（十六进制表示）</em></p>
+
+<h4 id="3-方法中的self参数">3.方法中的self参数</h4>
+
+<p>给对象增加属性：
+在 Python 中，要 给对象设置属性，下列这个方法非常的容易，但是不推荐使用。因为：<strong>对象属性的封装应该封装在类的内部</strong>
+方法：只需要在 类的外部的代码 中直接通过 . 设置一个属性即可</p>
+
+<pre><code class="language-python"># 可以使用 .属性名 利用赋值语句就可以
+tom.name = 'Tom'
+</code></pre>
+
+<p>使用self在方法内部输出：</p>
+
+<blockquote>
+<p>由 哪一个对象 调用的方法，方法内的 self 就是 哪一个对象的引用</p>
+</blockquote>
+
+<ul>
+<li>在类封装的方法内部，self 就表示** 当前调用方法的对象自己**</li>
+<li>调用方法时，程序员不需要传递 self 参数</li>
+<li>在方法内部
+
+<ul>
+<li>可以通过 self. 访问对象的属性</li>
+<li>也可以通过 self. 调用其他的对象方法
+<br /></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-python">class Cat:
+
+    def eat(self):
+        # 哪一个对象调用的方法， self就是哪一个对象的引用
+        print('%s 爱吃鱼' % self.name)
+
+    def drink(self):
+        print('%s 要喝水' % self.name)
+
+# 创建猫 对象
+tom = Cat()
+
+# 可以使用 .属性名 利用赋值语句就可以
+tom.name = 'Tom'
+
+tom.eat()
+tom.drink()
+</code></pre>
+
+<h4 id="4-初始化方法">4.初始化方法</h4>
+
+<p>当使用 <code>类名()</code> 创建对象时，会 <strong>自动</strong> 执行以下操作：
+1. 为对象在内存中 <strong>分配空间</strong> —— 创建对象
+2. 为对象的属性 <strong>设置初始值</strong> —— 初始化方法 (init)
+<strong>这个 初始化方法 就是 <code>__init__</code> 方法，<code>__init__</code> 是对象的内置方法,专门用来定义一个类 具有哪些属性</strong></p>
+
+<h5 id="在初始化方法内部定义属性">在初始化方法内部定义属性</h5>
+
+<ul>
+<li>在 <code>__init__</code> 方法内部使用 <code>self.属性名 = 属性的初始值</code> 就可以<strong>定义属性</strong></li>
+<li>定义属性之后，再使用 该类创建的对象，都会拥有该属性</li>
+</ul>
+
+<pre><code class="language-python">class Cat:
+
+    def __init__(self):
+
+        print('这是一个初始化方法')
+        # self.属性名= 属性的初始值
+        self.name = 'Tom'
+
+# 创建猫 对象
+tom = Cat()
+
+print(tom.name)
+</code></pre>
+
+<h5 id="初始化方法的改造-初始化的同时设置初始值">初始化方法的改造——初始化的同时设置初始值</h5>
+
+<p>在开发中，如果希望在 创建对象的同时，就设置对象的属性，可以对<code>__init__</code> 方法进行改造
+1. 把希望设置的属性值，定义成 <code>__init__</code> 方法的参数
+2. 在方法内部使用 <code>self.属性 = 形参</code> 接收外部传递的参数
+3. 在创建对象时，使用 <code>类名(属性1, 属性2...)</code> 调用</p>
+
+<pre><code class="language-python">class Cat:
+	# 将希望设定的属性初始值作为参数
+    def __init__(self, new_name):
+
+        print('这是一个初始化方法')
+        # self.属性名= 属性的初始值
+        self.name = new_name
+
+    def eat(self):
+        print('%s 爱吃鱼' % self.name)
+
+# 创建 猫 对象
+tom = Cat('Tom')
+
+print(tom.name)
+
+lazy_cat = Cat('懒猫')
+lazy_cat.eat()
+</code></pre>
+
+<h4 id="5-内置方法和属性">5.内置方法和属性</h4>
+
+<p><strong><code>__del__()</code>方法：对象在从内存中被销毁前，会 自动 调用该方法</strong></p>
+
+<ul>
+<li><p>在Python中的自动调用:</p>
+
+<ul>
+<li>当使用 <code>类名()</code> 创建对象时，为对象 分配完空间后，自动 调用<code>__init__</code>方法</li>
+<li>当一个 对象被从内存中销毁 前，会 自动 调用<code>__del__</code>方法</li>
+</ul></li>
+
+<li><p><strong>生命周期</strong>：</p>
+
+<ul>
+<li>一个对象从调用 <code>类名()</code> 创建，生命周期开始</li>
+<li>一个对象的 <code>__del__</code> 方法一旦被调用，生命周期结束</li>
+<li>在对象的生命周期内，可以访问对象属性，或者让对象调用方法</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-python">class Cat:
+    def __init__(self, new_name):
+
+        self.name = new_name
+
+        print('%s 来了' % self.name)
+
+    def __del__(self):
+
+        print('%s 我走了' % self.name)
+
+
+tom = Cat('Tom')
+print(tom.name)
+
+</code></pre>
+
+<p>这段代码的执行结果：</p>
+
+<pre><code class="language-python"># 程序执行完毕前，会释放全局变量 tom 的内存，结束生命周期
+Tom 来了
+Tom
+Tom 我走了
+</code></pre>
+
+<p><strong><code>__str__()</code>方法：可以让使用<code>print</code>输出 对象变量 时，能够打印 自定义的内容</strong>
+在 Python 中，使用<code>print</code> 输出 对象变量，默认情况下，会输出这个变量 <strong>引用的对象</strong> 是 由哪一个类创建的对象，以及 在内存中的地址（十六进制表示）
+如： <code>&lt;__main__.Cat object at 0x0000021716CE69B0&gt;</code></p>
+
+<p>使用范例：</p>
+
+<pre><code class="language-python">    def __str__(self):
+
+        # 必须返回一个字符串
+        return '我是小猫'
+</code></pre>
+
+<h3 id="5-3-面向对象封装案例">5.3 面向对象封装案例</h3>
+
+<h5 id="封装">封装</h5>
+
+<ol>
+<li><strong>封装</strong> 是面向对象编程的一大特点</li>
+<li>面向对象编程的 <strong>第一步</strong> —— 将 <strong>属性</strong> 和 <strong>方法</strong> <strong>封装</strong> 到一个抽象的 <strong>类</strong> 中</li>
+<li>外界 使用 <strong>类</strong> 创建 <strong>对象</strong>，然后 <strong>让对象调用方法</strong></li>
+<li><strong>对象方法的细节</strong> 都被 <strong>封装</strong> 在 <strong>类的内部</strong></li>
+</ol>
+
+<blockquote>
+<p>一个对象的 属性 可以是 <strong>另外一个类创建的对象</strong></p>
+</blockquote>
+
+<h4 id="案例一-小明爱跑步">案例一：小明爱跑步</h4>
+
+<p><strong>需求</strong>:
+1. 小明 体重 75.0 公斤
+2. 小美 体重 45.0 公斤
+3. 小明每次 跑步 会减肥 0.5 公斤
+4. 小明每次 吃东西 体重增加 1 公斤</p>
+
+<pre><code class="language-python">class Person:
+    def __init__(self, name, weight):
+
+        # self.属性 = 形参
+        self.name = name
+        self.weight = weight
+
+    def __str__(self):
+
+        return '我的名字叫 %s ，体重是 %.2f 公斤' % (self.name, self.weight)
+
+    def run(self):
+        print(&quot;%s 跑步&quot; % self.name)
+        self.weight -= 0.5
+    def eat(self):
+        print(&quot;%s 吃饭&quot; % self.name)
+        self.weight += 1
+
+xiaoming = Person('小明', 75.0)
+xiaomei = Person('小美', 45.0)
+xiaoming.run()
+xiaoming.eat()
+xiaomei.run()
+xiaomei.eat()
+
+print(xiaoming)
+print(xiaomei)
+</code></pre>
+
+<p>输出结果：</p>
+
+<pre><code class="language-python">小明 跑步
+小明 吃饭
+小美 跑步
+小美 吃饭
+我的名字叫 小明 ，体重是 75.50 公斤
+我的名字叫 小美 ，体重是 45.50 公斤
+</code></pre>
+
+<h4 id="案例二-摆放家具">案例二：摆放家具</h4>
+
+<p><strong>需求</strong>:
+1.房子 (House) 有 户型、总面积 和 家具名称列表
+   - 新房子没有任何的家具</p>
+
+<p>2.家具 (HouseItem) 有 名字 和 占地面积，其中</p>
+
+<ul>
+<li>席梦思 (bed) 占地 4 平米</li>
+<li>衣柜 (chest) 占地 2 平米</li>
+<li>餐桌 (table) 占地 1.5 平米
+<br /></li>
+</ul>
+
+<p>3.将以上三件 家具 添加 到 房子 中
+4.打印房子时，要求输出：户型、总面积、剩余面积、家具名称列表</p>
+
+<pre><code class="language-python">class HouseItem:
+
+    def __init__(self, name, area):
+
+        self.name = name
+        self.area = area
+
+    def __str__(self):
+        return '[%s] 占地 %.2f' % (self.name, self.area)
+
+class House:
+    def __init__(self, house_type, area):
+
+        self.house_type = house_type
+        self.area = area
+
+        self.free_area = area
+
+        self.item_list = []
+
+    def __str__(self):
+
+        return ('户型：%s\n总面积：%.2f[剩余：%.2f]\n家具：%s'
+                % (self.house_type, self.area,
+                   self.free_area, self.item_list))
+
+    def add_item(self,item):
+
+        print('要添加 %s' % item)
+        # 1. 判断家具的面积
+        if item.area &gt; self.free_area:
+            print('%s 的面积太大，无法添加' % item.name)
+            return
+        # 2. 将家具的名称添加到列表中
+        self.item_list.append(item.name)
+        # 3. 计算剩余面积
+        self.free_area -= item.area
+
+# 1. 创建家具
+bed = HouseItem('席梦思', 4)
+chest = HouseItem('衣柜', 2)
+table = HouseItem('餐桌', 1.5)
+
+print(bed)
+print(chest)
+print(table)
+
+# 2. 创建房子
+my_home = House('两室一厅', 60)
+my_home.add_item(bed)
+my_home.add_item(chest)
+my_home.add_item(table)
+print(my_home)
+
+</code></pre>
+
+<h4 id="案例三-士兵突击">案例三：士兵突击</h4>
+
+<p><strong>需求</strong>:
+1. 士兵 许三多 有一把 AK47
+2. 士兵 可以 开火
+3. 枪 能够 发射 子弹
+4. 枪 装填 装填子弹 —— 增加子弹数量</p>
+
+<pre><code class="language-python">class Gun:
+
+    def __init__(self,model):
+
+        # 1. 枪的型号
+        self.model = model
+
+        # 2. 子弹的数量
+        self.bullet_count = 0
+
+    def add_bullet(self,count):
+
+        self.bullet_count += count
+
+    def shoot(self):
+
+        # 1. 判断子弹数量
+        if self.bullet_count &lt;= 0:
+            print('[%s] 没有子弹了...' % self.model)
+        # 2. 发射子弹
+        self.bullet_count -= 1
+        # 3. 提示发射信息
+        print('[%s] 发射子弹... [%d]' % (self.model, self.bullet_count))
+
+class Soldier:
+    def __init__(self, name):
+
+        # 1. 姓名
+        self.name = name
+        # 2. 枪 - 新兵没有枪
+        self.gun = None
+
+    def fire(self):
+
+        # 1. 判断士兵是否有枪
+        if self.gun is None:
+            print('[%s] 还没有枪' % self.name)
+            return
+
+        # 2. 让枪装填子弹
+        self.gun.add_bullet(50)
+
+        # 3. 让枪发射子弹
+        self.gun.shoot()
+
+# 1. 创建枪对象
+ak47 = Gun('Ak47')
+
+# 2. 创建士兵
+xusanduo = Soldier('许三多')
+xusanduo.gun = ak47
+xusanduo.fire()
+
+</code></pre>
+
+<h3 id="5-4-案例中的知识点">5.4 案例中的知识点</h3>
+
+<h5 id="none和身份运算符">None和身份运算符</h5>
+
+<p><strong>定义没有初始值的属性：</strong></p>
+
+<p>在定义属性时，如果 <strong>不知道设置什么初始值</strong>，可以设置为 <code>None</code>
+- <code>None</code> 关键字 表示 什么都没有
+- 表示一个 空对象，没有方法和属性，是一个特殊的常量
+- 可以将 <code>None</code> 赋值给任何一个变量</p>
+
+<p><strong>身份运算符：</strong>
+身份运算符用于 <strong>比较</strong> 两个对象的 <strong>内存地址</strong> 是否一致 —— <strong>是否是对同一个对象的引用</strong></p>
+
+<p>在 Python 中针对 None 比较时，建议使用 <code>is</code> 判断</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">is</td>
+<td align="left">is 是判断两个标识符是不是引用同一个对象</td>
+<td align="left">x is y，类似 id (x) == id (y)</td>
+</tr>
+
+<tr>
+<td align="left">is not</td>
+<td align="left">is not 是判断两个标识符是不是引用不同对象</td>
+<td align="left">x is not y，类似 id (a) != id (b)</td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="is-与-的区别">is 与 == 的区别：</h5>
+
+<ul>
+<li><code>is</code> 用于判断 两个变量 引用对象是否为同一个（内存地址是否相同）</li>
+<li><code>==</code> 用于判断 引用变量的值 是否相等</li>
+</ul>
+
+<pre><code class="language-python">&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; b = [1, 2, 3]
+&gt;&gt;&gt; id(a)
+2925512141256
+&gt;&gt;&gt; id(b)
+2925512141192
+&gt;&gt;&gt; a is b
+False
+&gt;&gt;&gt; a == b
+True
+</code></pre>
+
+<h3 id="5-5-私有属性和私有方法">5.5 私有属性和私有方法</h3>
+
+<p><strong>应用场景</strong></p>
+
+<ul>
+<li>在实际开发中，<strong>对象</strong> 的 <strong>某些属性或方法</strong> 可能只希望 <strong>在对象的内部被使用</strong>，而 <strong>不希望在外部被访问到</strong></li>
+<li><strong>私有属性</strong> 就是 对象 不希望公开的 属性</li>
+<li><strong>私有方法</strong> 就是 对象 不希望公开的 方法</li>
+</ul>
+
+<p>定义方法:在 <strong>定义属性或方法时</strong>，在 属性名或者方法名前 增加 <strong>两个下划线</strong>，定义的就是 <strong>私有</strong> 属性或方法</p>
+
+<pre><code class="language-python">class Women:
+    def __init__(self, name):
+
+        self.name = name
+        self.__age = 18
+
+    # 定义一个私有方法
+    def __secret(self):
+        # 在对象的方法内部，可以访问对象的私有属性
+        print('%s 的年龄是 %d' % (self.name, self.__age))
+
+xiaofang = Women('小芳')
+# 私有属性在外界不能被直接访问
+# print(xiaofang.__age)
+# 私有方法在外界不能被直接访问
+# xiaofang.__secret()
+</code></pre>
+
+<p>伪私有属性和私有方法：
+Python中，并没有 真正意义 的 私有
+我们可以通过一种处理方式访问到私有属性和方法：
+<code>_类名 =&gt; _类名__名称</code></p>
+
+<pre><code class="language-python"># 伪私有属性
+print(xiaofang._Women__age)
+# 伪私有方法
+xiaofang._Women__secret()
+</code></pre>
+
+<h3 id="5-6-继承">5.6 继承</h3>
+
+<p><strong>面向对象三大特性</strong></p>
+
+<ol>
+<li><strong>封装</strong> 根据 职责 将 属性 和 方法 封装 到一个抽象的 类 中</li>
+<li><strong>继承</strong> 实现代码的重用，相同的代码不需要重复的编写</li>
+<li><strong>多态</strong> 不同的对象调用相同的方法，产生不同的执行结果，增加代码的灵活度</li>
+</ol>
+
+<h4 id="1-单继承">1.单继承</h4>
+
+<p><strong>继承</strong>的概念：<strong>子类</strong> 拥有 <strong>父类</strong> 的所有** 方法 和 属性**
+<strong>继承的语法</strong>：</p>
+
+<pre><code class="language-python">class 类名(父类名)：
+
+	pass
+</code></pre>
+
+<ul>
+<li>子类 继承自 父类，可以直接 享受 父类中已经封装好的方法，不需要再次开发</li>
+<li>子类 中应该根据 职责，封装 子类特有的 属性和方法</li>
+</ul>
+
+<p><strong>继承的传递性</strong>：
+- C 类从 B 类继承，B 类又从 A 类继承
+- 那么 C 类就具有 B 类和 A 类的所有属性和方法
+- 子类 拥有 父类 以及 父类的父类 中封装的所有 属性 和 方法</p>
+
+<h4 id="2-方法的重写">2.方法的重写</h4>
+
+<p>当 父类 的方法实现不能满足子类需求时，可以对方法进行 <strong>重写 (override)</strong></p>
+
+<p>重写 父类方法有两种情况：
+1. 覆盖 父类的方法
+2. 对父类方法进行 扩展</p>
+
+<h5 id="1-覆盖父类的方法">1) 覆盖父类的方法</h5>
+
+<ul>
+<li>如果在开发中，父类的方法实现 和 子类的方法实现，完全不同</li>
+<li>就可以使用 覆盖 的方式，在子类中 重新编写 父类的方法实现</li>
+</ul>
+
+<blockquote>
+<p>具体的实现方式，就相当于在 <strong>子类中</strong> 定义了一个 和父类同名的方法并且实现
+重写之后，在运行时，只会调用 <strong>子类中重写的方法</strong>，而不再会调用 <strong>父类封装的方法</strong></p>
+</blockquote>
+
+<h5 id="2-对父类方法进行-扩展">2) 对父类方法进行 扩展</h5>
+
+<ul>
+<li>如果在开发中，子类的方法实现 中 包含 父类的方法实现
+
+<ul>
+<li>父类原本封装的方法实现 是 子类方法的一部分</li>
+</ul></li>
+<li>就可以使用 扩展 的方式
+
+<ul>
+<li>在子类中 <strong>重写</strong> 父类的方法</li>
+<li>在需要的位置使用<code>super().父类方法</code> 来调用父类方法的执行</li>
+<li>代码其他的位置针对子类的需求，编写 <strong>子类特有的代码实现</strong></li>
+</ul></li>
+</ul>
+
+<p>关于 <code>super</code>
+- 在 Python 中 <code>super</code> 是一个 特殊的类
+- <code>super()</code> 就是使用 <code>super</code> 类创建出来的对象
+- 最常 使用的场景就是在 重写父类方法时，调用 在父类中封装的方法实现</p>
+
+<pre><code class="language-python"># 父类
+class Dog():
+    def bark(self):
+        print(&quot;汪汪叫&quot;)
+
+# 子类，在括号中填入父类的名字
+class XiaoTianQuan(Dog):
+
+    def fly(self):
+        print('我会飞')
+
+    # 扩展父类的方法
+    def bark(self):
+
+        # 1. 针对子类特有的需求，编写代码
+        print('神一样的叫唤')
+
+        # 2. 使用 super(). 调用原本在父类中封装的方法
+		super().bark()
+		# 还有一种老方法： 父类名.方法(self)
+		# Dog.bark(self)
+
+        # 3. 增加其他子类的代码
+        print('#%$#$%#')
+
+xiaotianquan = XiaoTianQuan()
+xiaotianquan.fly()
+xiaotianquan.bark()
+</code></pre>
+
+<h4 id="3-父类的-私有属性-和-私有方法">3. 父类的 私有属性 和 私有方法</h4>
+
+<ol>
+<li>子类对象 <strong>不能</strong> 在自己的方法内部，<strong>直接</strong> 访问 父类的 <strong>私有属性</strong> 或 私****有方法</li>
+<li>子类对象 <strong>可以通过</strong> 父类 的 公有方法 <strong>间接</strong> 访问到 <strong>私有属性</strong> 或 私有****方法</li>
+</ol>
+
+<pre><code class="language-python">class A:
+
+    def __init__(self):
+
+        self.num1 = 100
+        self.__num2 = 200
+
+    def __test(self):
+        print(&quot;私有方法 %d %d&quot; % (self.num1, self.__num2))
+
+    # 在公有方法中调用自己的私有属性/方法
+    def gongyou(self):
+        print('父类的共有方法 %d' % self.__num2)
+
+        self.__test()
+class B(A):
+
+    def demo(self):
+        # 1. 在子类中不能访问父类的私有属性
+        #  print(&quot;访问父类的私有属性 %d&quot; % self.__num2)
+        # 2. 在子类中也不能调用父类的私有方法
+        # self.__test()
+        # 子类对象 通过 父类 的公有方法 间接 的访问到 私有属性/方法
+        self.gongyou()
+
+# 创建一个子类对象
+b = B()
+b.demo()
+</code></pre>
+
+<h4 id="4-多继承">4.多继承</h4>
+
+<p><strong>概念</strong>
+- <strong>子类</strong> 可以拥有 <strong>多个父类</strong>，并且具有 <strong>所有父类</strong> 的 属性 和 方法
+- 例如：孩子 会继承自己 父亲 和 母亲 的 特性</p>
+
+<pre><code class="language-python">class A:
+
+    def test(self):
+        print('A -- test 方法')
+
+    def demo(self):
+        print('A -- demo 方法')
+
+class B:
+
+    def demo(self):
+        print('B -- demo 方法')
+
+    def test(self):
+        print('B -- test 方法')
+
+class C(A, B):
+
+    pass
+
+# 创建子类对象
+c = C()
+
+# 默认执行A类的方法。因为在clss C(A,B)中 括号内先写的A
+c.test()
+c.demo()
+
+# 确定C类对象调用方法的顺序
+print(C.__mro__)
+</code></pre>
+
+<h4 id="python-中的-mro-方法搜索顺序">Python 中的 MRO —— 方法搜索顺序</h4>
+
+<p>Python 中针对 类 提供了一个 内置属性 <code>__mro__</code> 可以查看 方法 搜索顺序
+MRO 是 method resolution order，主要用于 在多继承时判断 方法、属性 的调用 路径</p>
+
+<pre><code class="language-python">print(C.__mro__)
+</code></pre>
+
+<p>输出结果：</p>
+
+<pre><code class="language-python">(&lt;class '__main__.C'&gt;, &lt;class '__main__.A'&gt;, &lt;class '__main__.B'&gt;, &lt;class 'object'&gt;)
+</code></pre>
+
+<ul>
+<li>在搜索方法时，是按照 <code>__mro__</code> 的输出结果 <strong>从左至右</strong> 的顺序查找的</li>
+<li>如果在当前类中 找到方法，就直接执行，不再搜索</li>
+<li>如果 没有找到，就查找下一个类 中是否有对应的方法，如果找到，就直接执行，不再搜索</li>
+<li>如果找到最后一个类，还没有找到方法，程序报错</li>
+</ul>
+
+<h3 id="5-7-多态">5.7 多态</h3>
+
+<p><strong>面向对象三大特性</strong>
+↓       ↓       ↓
+1.封装 根据 职责 将 属性 和 方法 封装 到一个抽象的 类 中
+ - 定义类的准则</p>
+
+<p>2.继承 实现代码的重用，相同的代码不需要重复的编写</p>
+
+<ul>
+<li>设计类的技巧</li>
+<li>子类针对自己特有的需求，编写特定的代码</li>
+</ul>
+
+<p>3.多态 不同的 子类对象 调用相同的 父类方法，产生不同的执行结果
+ - 多态 可以 增加代码的灵活度
+ - 以 继承 和 重写父类方法 为前提
+ - 是调用方法的技巧，不会影响到类的内部设计</p>
+
+<pre><code class="language-python">class Dog():
+
+    def __init__(self,name):
+        self.name = name
+
+    def game(self):
+        print(&quot;%s 蹦蹦跳跳的玩耍....&quot; % self.name)
+
+class XiaoTianDog(Dog):
+
+    def game(self):
+        print(&quot;%s 飞到天上去玩耍...&quot; % self.name)
+
+class Person():
+
+    def __init__(self,name):
+        self.name = name
+
+    def game_with_dog(self, dog):
+        print('%s 和 %s 快乐的玩耍...' % (self.name, dog.name))
+
+        # 让狗玩耍
+		# 在方法内部直接让 狗对象 去调用 game方法
+        dog.game()
+
+# 1. 创建一个 狗 对象
+wangcai = Dog(&quot;旺财&quot;)
+xiaotianquan = XiaoTianDog(&quot;哮天犬&quot;)
+# 2. 创建一个 小明 对象
+xiaoming = Person(&quot;小明&quot;)
+# 3. 让小明调用和狗玩的方法
+xiaoming.game_with_dog(wangcai)
+xiaoming.game_with_dog(xiaotianquan)
+</code></pre>
+
+<p>输出结果：</p>
+
+<pre><code class="language-python">小明 和 旺财 快乐的玩耍...
+旺财 蹦蹦跳跳的玩耍....
+小明 和 哮天犬 快乐的玩耍...
+哮天犬 飞到天上去玩耍...
+</code></pre>
+
+<h3 id="5-8-类属性">5.8 类属性</h3>
+
+<h4 id="1-类的结构">1. 类的结构</h4>
+
+<ol>
+<li>使用面向对象开发，第一步是 <strong>设计 类</strong></li>
+<li>使用 <code>类名()</code>创建对象，创建对象的动作有两步：
+
+<ol>
+<li>在内存中为对象 <strong>分配空间</strong></li>
+<li>调用初始化方法<code>__init__</code> 为 对象初始化</li>
+</ol></li>
+<li>对象创建后，<strong>内存</strong> 中就有了一个对象的 实实在在 的存在——<strong>实例</strong></li>
+</ol>
+
+<p>术语表示：
+- 创建出来的 对象 叫做 类 的 <strong>实例</strong>
+- 创建对象的 动作 叫做 <strong>实例化</strong>
+- 对象的属性 叫做 <strong>实例属性</strong>
+- 对象调用的方法 叫做 <strong>实例方法</strong></p>
+
+<p><strong>结论</strong></p>
+
+<p>每一个对象 都有自己 <strong>独立的内存空间</strong>，保存各自不同的属性
+多个对象的方法，在内存中只有一份，在调用方法时，<strong>需要把对象的引用</strong> 传递到方法内部</p>
+
+<h4 id="2-类是一个特殊的对象">2. 类是一个特殊的对象</h4>
+
+<blockquote>
+<p>Python 中 一切皆对象：
+- class AAA: 定义的类属于 类对象
+- obj1 = AAA() 属于 实例对象</p>
+</blockquote>
+
+<ul>
+<li>在程序运行时，类 同样 <strong>会被加载到内存</strong></li>
+<li>在 Python 中，类 是一个特殊的对象 —— <strong>类对象</strong></li>
+<li>在程序运行时，<strong>类对象</strong> 在内存中 <strong>只有一份</strong>，使用 <strong>一个类</strong> 可以创建出 <strong>很多个对象实例</strong></li>
+<li>除了封装 <strong>实例</strong> 的 属性 和 方法 外，类对象 还可以拥有自己的 属性 和 方法
+
+<ul>
+<li>类属性</li>
+<li>类方法</li>
+</ul></li>
+<li>通过 <code>类名.</code> 的方式可以 访问类的属性 或者 调用类的方法</li>
+</ul>
+
+<h4 id="3-类属性和实例属性">3. 类属性和实例属性</h4>
+
+<p><strong>概念和使用</strong>
+- <strong>类属性</strong> 就是 类对象 中定义的 属性
+- 通常用来记录 <strong>与这个类相关</strong> 的特征
+- 类属性 <strong>不会</strong>用于记录 <strong>具体对象的特征</strong></p>
+
+<p><strong>示例需求</strong>：
+- 定义一个 工具类
+- 每件工具都有自己的 name
+- <strong>需求</strong> —— 知道使用这个类，创建了多少个工具对象？</p>
+
+<pre><code class="language-python">class Tool():
+
+    # 使用赋值语句定义 类属性 ，记录所有工具对象的数量
+    count = 0
+
+    def __init__(self,name):
+        self.name = name
+
+        # 让类属性的值 +1
+        Tool.count += 1
+
+# 1. 创建工具对象
+tool1 = Tool('斧头')
+tool2 = Tool('榔头')
+tool3 = Tool('水桶')
+
+# 2. 输出工具对象的总数
+print(Tool.count)
+</code></pre>
+
+<h4 id="4-类方法和静态方法">4. 类方法和静态方法</h4>
+
+<ul>
+<li><strong>类方法</strong> 就是针对 <strong>类对象</strong> 定义的方法</li>
+<li>在 <strong>类方法</strong> 内部可以直接访问 <strong>类属性</strong> 或者调用其他的 <strong>类方法</strong></li>
+</ul>
+
+<p>定义类方法的语法：</p>
+
+<pre><code class="language-python">@classmethod
+def 类方法名(cls):
+    pass
+</code></pre>
+
+<ul>
+<li>类方法需要用 <strong>修饰器</strong>  <code>@classmethod</code> 来标识，告诉解释器这是一个类方法</li>
+<li>类方法的 第一个参数 应该是 <code>cls</code>
+
+<ul>
+<li>由 哪一个类 调用的方法，方法内的 cls 就是 哪一个类的引用</li>
+<li>这个参数和 实例方法 的第一个参数是 <code>self</code> 类似</li>
+<li>提示 使用其他名称也可以，不过习惯使用 cls</li>
+</ul></li>
+</ul>
+
+<p>1.通过 <code>类名.</code>调用 类方法，调用时不需要传递 cls 参数
+2.在方法内部
+   - 可以通过 cls. 访问类的属性
+   - 也可以通过 cls. 调用其他的类方法</p>
+
+<pre><code class="language-python">class Tool():
+
+    # 使用赋值语句定义 类属性 ，记录所有工具对象的数量
+    count = 0
+
+    @classmethod
+    def show_tool_count(cls):
+
+        print('工具对象的数量 %d' % cls.count)
+
+    def __init__(self,name):
+        self.name = name
+
+        # 让类属性的值 +1
+        Tool.count += 1
+
+# 创建工具对象
+tool1 = Tool('斧头')
+
+# 调用类方法
+Tool.show_tool_count()
+</code></pre>
+
+<p><strong>静态方法</strong>：
+在开发时，如果需要在 <strong>类</strong> 中封装一个方法，这个方法：
+- 既 不需要 访问 实例属性 或者调用 实例方法
+- 也 不需要 访问 类属性 或者调用 类方法
+这个时候，可以把这个方法封装成一个 <strong>静态方法</strong></p>
+
+<p>定义静态方法的语法：</p>
+
+<pre><code class="language-python">@staticmethod
+def 静态方法名():
+    pass
+</code></pre>
+
+<pre><code class="language-python">class Dog():
+    # 定义静态方法不需要指定第一个参数（如self、cls）
+    @staticmethod
+    def run():
+        print(&quot;小狗要跑...&quot;)
+
+# 通过类名，调用静态方法，不需要创建对象
+Dog.run()
+</code></pre>
+
+<p><strong>方法实例</strong>：
+需求</p>
+
+<p>1.设计一个 Game 类</p>
+
+<p>2.属性：
+- 定义一个 类属性 top_score 记录游戏的 历史最高分
+- 定义一个 实例属性 player_name 记录 当前游戏的玩家姓名</p>
+
+<p>3.方法：
+- 静态方法 show_help 显示游戏帮助信息
+- 类方法 show_top_score 显示历史最高分
+- 实例方法 start_game 开始当前玩家的游戏</p>
+
+<p>4.主程序步骤
+- 1) 查看帮助信息
+- 2) 查看历史最高分
+- 3) 创建游戏对象，开始游戏</p>
+
+<pre><code class="language-python">class Game():
+
+    # 类属性：历史最高分
+    top_score = 0
+
+    # 实例属性
+    def __init__(self, player_name):
+        self.player_name = player_name
+
+    # 静态方法
+    @staticmethod
+    def show_help():
+        print('帮助信息：让僵尸进入大门')
+
+    # 类方法
+    @classmethod
+    def show_top_score(cls):
+        print('历史记录 %d' % cls.top_score)
+
+    # 实例方法
+    def start_game(self):
+        print(&quot;%s 开始游戏啦...&quot; % self.player_name)
+
+# 1. 查看游戏的帮助信息
+Game.show_help()
+
+# 2. 查看历史最高分
+Game.show_top_score()
+
+# 3. 创建游戏对象
+game = Game('小明')
+
+game.start_game()
+</code></pre>
+
+<p><strong>知识总结</strong>：
+三种方法的应用场景：
+- <strong>实例方法</strong> —— 方法内部需要访问 <strong>实例属性</strong>，也可以使用 类名. <strong>访问类属性</strong>
+- <strong>类方法</strong> —— 方法内部 只 需要访问 <strong>类属性</strong>
+- <strong>静态方法</strong> —— 方法内部，不需要访问 <strong>实例属性</strong> 和 <strong>类属性</strong></p>
+
+<h3 id="5-9-单例">5.9 单例</h3>
+
+<p><strong>单例设计模式</strong></p>
+
+<ul>
+<li>设计模式
+
+<ul>
+<li><strong>设计模式</strong> 是 <strong>前人工作的总结和提炼</strong>，通常，被人们广泛流传的设计模式都是针对 <strong>某一特定问题</strong> 的成熟的解决方案</li>
+<li>使用 <strong>设计模式</strong> 是为了可重用代码、让代码更容易被他人理解、保证代码可靠性</li>
+</ul></li>
+<li>单例设计模式
+
+<ul>
+<li><strong>目的</strong> —— 让 类 创建的对象，在系统中 只有 <strong>唯一的一个实例</strong></li>
+<li>每一次执行 <code>类名()</code> 返回的对象，<strong>内存地址是相同的</strong></li>
+</ul></li>
+</ul>
+
+<p><strong><code>__new__</code>方法</strong>
+- 使用 <code>类名 ()</code> 创建对象时，Python 的解释器 首先 会 调用 <code>__new__</code> 方法为对象 <strong>分配空间</strong>
+- <code>__new__</code> 是一个 由 object 基类提供的 <strong><em>内置的静态方法</em></strong>，主要作用有两个：
+    - 1) 在内存中为对象 <strong>分配空间</strong>
+    - 2) 返回 <strong>对象的引用</strong>
+- Python 的解释器获得对象的 <strong>引用</strong> 后，将引用作为 <strong>第一个参数</strong>，传递给 <code>__init__</code> 方法</p>
+
+<p><strong>注意</strong>：
+重写 <code>__new__</code>方法 一定要 <code>return super().__new__(cls)</code>，否则 Python 的解释器 得不到 分配了空间的 <strong>对象引用</strong>，就不会调用对象的初始化方法
+注意：<code>__new__</code>是一个<strong>静态方法</strong>，在调用时需要 主动传递 <strong>cls</strong> 参数</p>
+
+<pre><code class="language-python">class MusicPlayer():
+
+    def __new__(cls, *args, **kwargs):
+
+        # 1. 创建对象时，__nuw__方法会自动被调用
+        print(&quot;创建对象，分配空间&quot;)
+
+        # 2. 为对象分配空间（new方法是 静态 方法，要传入 cls ）
+        instance = super().__new__(cls)
+
+        # 3. 返回对象的引用
+        return instance
+
+    def __init__(self):
+        print(&quot;播放器初始化&quot;)
+
+# 创建播放器对象
+player = MusicPlayer()
+print(player)
+</code></pre>
+
+<p><strong>单例 的创建</strong>
+<strong>单例</strong> —— 让 <strong>类</strong> 创建的对象，在系统中 只有 <strong>唯一的一个实例</strong>
+1. 定义一个 <strong>类属性</strong>，初始值是 <code>None</code>，用于记录 <strong>单例对象的引用</strong>
+2. 重写 <code>__new__</code> 方法
+3. 如果 类属性 is <code>None</code>，调用父类方法分配空间，并在类属性中记录结果
+4. 返回 <strong>类属性</strong> 中记录的 <strong>对象引用</strong></p>
+
+<pre><code class="language-python"># 创建 单例：多个对象只有唯一的实例
+# 只执行一次初始化工作
+class MusicPlayer():
+
+    # 定义一个类属性，记录第一个被创建对象的引用
+    instance = None
+
+    # 再定义一个类属性，记录是否执行过初始化动作
+    init_flag = False
+    def __new__(cls, *args, **kwargs):
+
+        # 1. 判断类属性是否是空对象
+        if cls.instance is None:
+            # 2. 调用父类的new方法，为第一个对象分配空间
+            cls.instance = super().__new__(cls)
+        # 3.返回类属性保存的对象引用
+        return cls.instance
+
+    def __init__(self):
+
+        # 1. 判断是否执行过初始化动作
+        if MusicPlayer.init_flag:
+            return
+        # 2. 如果没有执行过，就执行初始化
+        print(&quot;初始化播放器&quot;)
+
+        # 3. 修改类属性的标记
+        MusicPlayer.init_flag = True
+        
+# 创建多个对象
+player1 = MusicPlayer()
+print(player1)
+
+player2 = MusicPlayer()
+print(player2)
+</code></pre>
+
+<p>输出结果:</p>
+
+<pre><code class="language-python">初始化播放器
+&lt;__main__.MusicPlayer object at 0x00000194E66179B0&gt;
+&lt;__main__.MusicPlayer object at 0x00000194E66179B0&gt;
+</code></pre>
+
+<h2 id="6-异常">6. 异常</h2>
+
+<h3 id="6-1-异常的概念">6.1 异常的概念</h3>
+
+<ul>
+<li>程序在运行时，如果 Python 解释器 遇到 一个错误，会停止程序的执行，并且提示一些错误信息，这就是 <strong>异常</strong></li>
+<li><strong>程序停止执行并且提示错误信息</strong> 这个动作，我们通常称之为：<strong>抛出 (raise) 异常</strong></li>
+</ul>
+
+<h3 id="6-2-捕获异常">6.2 捕获异常</h3>
+
+<h4 id="1-简单的捕获异常语法">1. 简单的捕获异常语法</h4>
+
+<ul>
+<li>在程序开发中，如果 <strong>对某些代码的执行不能确定是否正确</strong>，可以增加 <code>try(尝试)</code> 来 <strong>捕获异常</strong></li>
+
+<li><p>捕获异常最简单的语法格式：</p>
+
+<pre><code class="language-python">try:
+尝试执行的代码
+except:
+出现错误的处理
+</code></pre>
+
+<p><strong>简单异常捕获演练 —— 要求用户输入整数</strong>：</p>
+
+<pre><code class="language-python">try:
+num = int(input(&quot;请输入一个整数：&quot;))
+except:
+print(&quot;请输入正确的整数&quot;)
+
+print('-' * 50)
+</code></pre></li>
+</ul>
+
+<h4 id="2-错误类型捕获">2.错误类型捕获</h4>
+
+<p>在程序执行时，可能会遇到 <strong>不同类型的异常</strong>，并且需要 <strong>针对不同类型的异常</strong>，<strong>做出不同的响应</strong>，这个时候，就需要 <strong>捕获错误类型</strong> 了
+语法如下：</p>
+
+<pre><code class="language-python">try:
+    # 尝试执行的代码
+    
+except 错误类型1:
+    # 针对错误类型1，对应的代码处理
+    
+except (错误类型2, 错误类型3):
+    # 针对错误类型2 和 3，对应的代码处理
+    
+except Exception as result:
+    print(&quot;未知错误 %s&quot; % result)
+</code></pre>
+
+<p><strong>捕获未知错误</strong>：
+- 在开发时，<strong>要预判到所有可能出现的错误</strong>，还是有一定难度的
+- 如果希望程序 <strong>无论出现任何错误</strong>，都不会因为 Python 解释器 <strong>抛出异常而被终止</strong>，可以再增加一个 <code>except</code>
+语法如下：</p>
+
+<pre><code class="language-python">except Exception as result:
+    print(&quot;未知错误 %s&quot; % result)
+</code></pre>
+
+<h4 id="3-异常捕获完整语法">3. 异常捕获完整语法</h4>
+
+<p>语法结构如下：</p>
+
+<pre><code class="language-python">try:
+    # 尝试执行的代码
+    pass
+except 错误类型1:
+    # 针对错误类型1，对应的代码处理
+    pass
+except 错误类型2:
+    # 针对错误类型2，对应的代码处理
+    pass
+except (错误类型3, 错误类型4):
+    # 针对错误类型3 和 4，对应的代码处理
+    pass
+except Exception as result:
+    # 打印错误信息
+    print(result)
+else:
+    # 没有异常才会执行的代码
+    pass
+finally:
+    # 无论是否有异常，都会执行的代码
+    print(&quot;无论是否有异常，都会执行的代码&quot;)
+</code></pre>
+
+<p>例子：</p>
+
+<pre><code class="language-python">try:
+    # 提示用户输入一个整数
+    num = int(input(&quot;输入一个整数：&quot;))
+
+    # 使用 8 除以 用户输入的整数并且 输出
+    result = 8 / num
+
+    print(result)
+except ZeroDivisionError:
+    print(&quot;除0错误&quot;)
+except ValueError:
+    print(&quot;请输入正确的整数&quot;)
+except Exception as result:
+    print(&quot;未知错误 %s&quot; % result)
+else:
+    print(&quot;尝试成功&quot;)
+finally:
+    print(&quot;无论是否出现错误都会执行&quot;)
+</code></pre>
+
+<h4 id="4-异常的传递">4.异常的传递</h4>
+
+<p><strong>异常的传递</strong> —— 当 函数 / 方法 执行 出现异常，会 <strong>将异常传递</strong> 给 函数 / 方法 的 <strong>调用一方</strong>，如果 <strong>传递到主程序</strong>，仍然 没有异常处理，程序才会被终止</p>
+
+<ul>
+<li>在开发中，可以在主函数中增加 <strong>异常捕获</strong></li>
+<li>而在主函数中调用的其他函数，只要出现异常，都会传递到主函数的 <strong>异常捕获</strong> 中</li>
+<li>这样就不需要在代码中，增加大量的 <strong>异常捕获</strong>，能够保证代码的整洁</li>
+</ul>
+
+<pre><code class="language-python"># 主程序在调用函数的时候出现异常，函数将异常逐层传递给主函数
+def demo1():
+    return int(input(&quot;输入整数：&quot;))
+
+def demo2():
+    return demo1()
+
+try:
+    print(demo2())
+
+except Exception as result:
+    print(&quot;未知错误 %s&quot; % result)
+</code></pre>
+
+<h4 id="5-抛出-raise-异常">5. 抛出 raise 异常</h4>
+
+<p>在开发中，除了 代码执行出错 Python 解释器会 <strong>抛出</strong> 异常之外，还可以根据 应用程序 <strong>特有的业务需求</strong> <strong>主动抛出异常</strong>。
+Python 中提供了一个 <code>Exception</code> 异常类，在开发时，如果满足 特定业务需求时，希望 抛出异常，可以：
+1. 创建 一个 Exception 的 对象
+2. 使用 raise 关键字 抛出 异常对象</p>
+
+<pre><code class="language-python">def input_password():
+
+    # 1. 提示用户输入密码
+    pwd = input(&quot;请输入密码：&quot;)
+    # 2. 判断密码长度 &gt;= 8,返回用户输入的密码
+    if len(pwd) &gt;= 8:
+        return pwd
+    # 3. 如果 &lt; 8  主动抛出异常
+    print(&quot;主动抛出异常&quot;)
+
+    # 1&gt; 创建异常对象
+    ex = Exception(&quot;密码长度不够&quot;)
+
+    # 2&gt; 主动抛出异常
+    raise ex
+
+# 提示用户输入密码
+# 异常捕获
+try:
+    print(input_password())
+except Exception as result:
+    print(result)
+</code></pre>
+
+<h2 id="7-模块和包">7. 模块和包</h2>
+
+<h3 id="7-1-模块">7.1 模块</h3>
+
+<h4 id="1-模块的概念">1. 模块的概念</h4>
+
+<ul>
+<li>每一个以扩展名 py 结尾的 Python 源代码文件都是一个 <strong>模块</strong></li>
+<li>模块名 同样也是一个 <strong>标识符</strong>，需要符合标识符的命名规则</li>
+<li>在模块中定义的 <strong>全局变量 、函数、类</strong> 都是提供给外界直接使用的 <strong>工具</strong></li>
+<li>模块 就好比是 工具包，要想使用这个工具包中的工具，就需要先 <strong>导入</strong> 这个模块</li>
+</ul>
+
+<h4 id="2-模块的两种导入方式">2. 模块的两种导入方式</h4>
+
+<p><strong>1. import 导入</strong></p>
+
+<pre><code class="language-python">import 模块名1
+</code></pre>
+
+<p>使用 as 可以指定模块的别名</p>
+
+<pre><code class="language-python">import 模块名1 as 模块别名
+</code></pre>
+
+<pre><code class="language-python"># 使用 as 给模块名起 别名
+import hm_01_测试模块1 as DogModule
+import hm_02_测试模块2 as CatModule
+
+# 调用导入模块中的 函数
+DogModule.say_hello()
+CatModule.say_hello()
+
+# 调用导入模块中的 类 创建对象
+dog = DogModule.Dog()
+print(dog)
+cat = CatModule.Cat()
+print(cat)
+</code></pre>
+
+<p><strong>2. from&hellip;import 导入</strong>
+- 如果希望 <strong>从某一个模块</strong> 中，导入 <strong>部分</strong> 工具，就可以使用 <code>from ... import</code>的方式
+- import 模块名 是 一次性 把模块中 <strong>所有工具全部导入</strong>，并且通过 <code>模块名 / 别名</code> 访问</p>
+
+<pre><code class="language-python"># 从模块 导入 某一个工具
+from 模块名1 import 工具名
+</code></pre>
+
+<p>导入之后，不需要通过模块名，直接可以使用模块提供的工具。</p>
+
+<pre><code class="language-python">from hm_01_测试模块1 import Dog
+from hm_02_测试模块2 import say_hello
+
+say_hello()
+
+wangcai = Dog()
+print(wangcai)
+</code></pre>
+
+<p><strong>注意</strong>：
+如果 <strong>同时</strong> 导入了两个不同模块中 <strong>相同名称</strong> 的工具，则后导入的模块会 <strong>覆盖</strong> 先导入的模块的工具。————可以使用 as 起别名来避免这个问题。</p>
+
+<h4 id="3-name">3. <code>__name__</code></h4>
+
+<p><strong>在导入文件时，文件中 所有没有任何缩进的代码 都会被执行一遍！</strong>
+因此，开发人员 通常会在 模块下方 增加一些测试代码，仅在模块内使用，而被导入到其他文件中不需要执行。
+要实现这一功能，可以使用 <code>__name__</code>
+- <strong>name</strong> 是 Python 的一个内置属性，记录着一个 字符串
+- 如果 是被其他文件导入的，<strong>name</strong> 就是 模块名
+- 如果 是当前执行的程序 <strong>name</strong> 是 <strong>main</strong></p>
+
+<p>常用的Python文件的格式：</p>
+
+<pre><code class="language-python"># 导入模块
+# 定义全局变量
+# 定义类
+# 定义函数
+
+# 在代码的最下方
+def main():
+    # ...
+    pass
+
+# 根据 __name__ 判断是否执行下方代码
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+
+<h3 id="7-2-包-package">7.2 包（package）</h3>
+
+<p><strong>包 是一个 包含多个模块 的 特殊目录
+目录下有一个 特殊的文件 <strong>init</strong>.py
+包名的 命名方式 和变量名一致，小写字母 加 下划线</strong></p>
+
+<p>好处：使用 <code>import 包名</code>可以一次性导入 <strong>包</strong> 中 <strong>所有的模块</strong></p>
+
+<p><strong>init</strong>.py文件中要写的：
+要在外界使用 <strong>包</strong> 中的模块，需要在<code>__init__.py</code> 中指定 <strong>对外界提供的模块列表</strong></p>
+
+<pre><code class="language-python"># 从 当前目录 导入 模块列表
+from . import send_message
+from . import receive_message
+</code></pre>
+
+<h2 id="8-文件">8. 文件</h2>
+
+<h3 id="8-1-文件的概念">8.1 文件的概念</h3>
+
+<p>计算机的 <strong>文件</strong>，就是存储在某种 长期储存设备 上的一段 <strong>数据</strong>
+在计算机中，文件是以 <strong>二进制</strong> 的方式保存在磁盘上的</p>
+
+<h3 id="8-2-文件的基本操作">8.2 文件的基本操作</h3>
+
+<p>在 计算机 中要操作文件的套路非常固定，一共包含三个步骤：</p>
+
+<p>1.打开文件
+2.读、写文件</p>
+
+<ul>
+<li>读 将文件内容读入内存</li>
+<li>写 将内存内容写入文件
+<br /></li>
+</ul>
+
+<p>3.关闭文件</p>
+
+<p>Python中操作文件有 一个函数和三个方法：
+- open：     打开文件，并且返回文件操作对象
+- read：     将文件内容读取到内存
+- write：        将指定内容写入文件
+- close：        关闭文件</p>
+
+<p>open 函数负责打开文件，并且返回文件对象
+read/write/close 三个方法都需要通过 文件对象 来调用</p>
+
+<p>在python中，每次打开文件后都需要去关闭文件，因为文件对象会占用操作系统的资源。
+每次都要用 open()、close()来开关文件较为繁琐且容易忘记关闭，因此我们可以用<strong>另一种方式</strong>来操作：</p>
+
+<p><code>with open(&quot;文件名&quot;,'读写方式') as 文件别名:</code>
+使用这行语句来打开文件，就不需要再在末尾调用 close函数 关闭文件了。
+注意:在 with open语句后，接下来的代码需要<strong>缩进一格</strong>。</p>
+
+<h4 id="1-read方法-读取文件">1. read方法——读取文件</h4>
+
+<ul>
+<li>open 函数的第一个参数是要打开的文件名（文件名区分大小写）
+
+<ul>
+<li>如果文件 存在，返回 <strong>文件操作对象</strong></li>
+<li>如果文件 不存在，会 <strong>抛出异常</strong></li>
+</ul></li>
+<li>read 方法可以一次性 <strong>读入</strong> 并 <strong>返回</strong> 文件的 <strong>所有内容</strong></li>
+<li>close 方法负责 <strong>关闭文件</strong>
+
+<ul>
+<li>如果 <strong>忘记关闭文件</strong>，会造成系统资源消耗，而且会影响到后续对文件的访问</li>
+</ul></li>
+<li>注意：read 方法执行后，会把 文件指针 移动到 <strong>文件的末尾</strong></li>
+</ul>
+
+<h4 id="2-打开文件的几种方式">2. 打开文件的几种方式</h4>
+
+<p>open 函数默认以 <strong>只读方式</strong> 打开文件，并且返回文件对象
+open函数的语法格式:</p>
+
+<pre><code class="language-python">f = open(&quot;文件名&quot;, &quot;访问方式&quot;)
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left">访问方式</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">r</td>
+<td align="left">以<strong>只读</strong>方式打开文件。文件的指针将会放在文件的开头，这是<strong>默认模式</strong>。如果文件不存在，抛出异常</td>
+</tr>
+
+<tr>
+<td align="left">w</td>
+<td align="left">以<strong>只写</strong>方式打开文件。如果文件存在会被<strong>覆盖</strong>。如果文件不存在，创建新文件</td>
+</tr>
+
+<tr>
+<td align="left">a</td>
+<td align="left">以<strong>追加</strong>方式打开文件。如果该文件已存在，文件指针将会放在文件的<strong>结尾</strong>。如果文件不存在，创建新文件进行写入</td>
+</tr>
+
+<tr>
+<td align="left">r+</td>
+<td align="left">以<strong>读写</strong>方式打开文件。文件的指针将会放在文件的开头。如果文件不存在，抛出异常</td>
+</tr>
+
+<tr>
+<td align="left">w+</td>
+<td align="left">以<strong>读写</strong>方式打开文件。如果文件存在会被覆盖。如果文件不存在，创建新文件</td>
+</tr>
+
+<tr>
+<td align="left">a+</td>
+<td align="left">以<strong>读写</strong>方式打开文件。如果该文件已存在，文件指针将会放在文件的结尾。如果文件不存在，创建新文件进行写入</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-python"># 1. 打开文件
+file = open(&quot;README&quot;, 'w')
+
+# 2. 写入文件
+file.write('123 hello')
+
+# 3. 关闭文件
+file.close()
+</code></pre>
+
+<h4 id="3-按行读取文件内容">3. 按行读取文件内容</h4>
+
+<p>read 方法会默认把文件的 <strong>所有内容一次性读取到内存中</strong>。</p>
+
+<p><strong>readline方法</strong></p>
+
+<ul>
+<li><code>readline</code> 方法可以一次读取一行内容</li>
+<li>方法执行后，会把 <strong>文件指针</strong> 移动到下一行，准备再次读取</li>
+</ul>
+
+<pre><code class="language-python"># 打开文件
+file = open(&quot;README&quot;)
+
+while True:
+    # 读取一行内容
+    text = file.readline()
+
+    # 判断是否读到内容
+    if not text:
+        break
+
+    # 每读取一行的末尾已经有了一个 `\n`
+    print(text, end=&quot;&quot;)
+
+# 关闭文件
+file.close()
+</code></pre>
+
+<h4 id="4-读写案例-复制文件">4. 读写案例——复制文件</h4>
+
+<p><strong>小文件复制</strong>：
+打开一个已有文件，将其中内容全部读取，写入另一个新文件中</p>
+
+<pre><code class="language-python"># 1. 打开
+file_read = open(&quot;README&quot;)
+file_write = open(&quot;README[附件]&quot;,'w')
+
+# 2. 读、写
+text = file_read.read()
+file_write.write(text)
+
+# 3. 关闭
+file_read.close()
+file_write.close()
+</code></pre>
+
+<p><strong>大文件复制</strong>：
+打开一个已有文件，逐行读取其中的内容，并顺序逐行写入到另一个新文件中</p>
+
+<pre><code class="language-python"># 1. 打开
+file_read = open(&quot;README&quot;)
+file_write = open(&quot;README[附件]&quot;,'w')
+
+# 2. 读、写
+while True:
+    # 读取一行内容
+    text = file_read.readline()
+
+    # 判断是否读取到内容
+    if not text:
+        break
+
+    file_write.write(text)
+
+# 3. 关闭
+file_read.close()
+file_write.close()
+</code></pre>
+
+<h3 id="8-3-文件-目录的常用管理操作">8.3 文件/目录的常用管理操作</h3>
+
+<p>在 终端 / 文件浏览器、 中可以执行常规的 <strong>文件 / 目录</strong> 管理操作，例如：
+<strong>创建、重命名、删除、改变路径、查看目录内容、……</strong>
+在 Python 中，如果希望通过程序实现上述功能，需要导入<code>os</code>模块</p>
+
+<p><strong>文件操作</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">方法名</th>
+<th align="left">说明</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">01</td>
+<td align="left">rename</td>
+<td align="left">重命名文件</td>
+<td align="left"><code>os.rename(源文件名，新文件名)</code></td>
+</tr>
+
+<tr>
+<td align="left">02</td>
+<td align="left">remove</td>
+<td align="left">删除文件</td>
+<td align="left"><code>os.remove(文件名)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>目录操作</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">方法名</th>
+<th align="left">说明</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">01</td>
+<td align="left">listdir</td>
+<td align="left">目录列表</td>
+<td align="left"><code>os.listdir(目录名)</code></td>
+</tr>
+
+<tr>
+<td align="left">02</td>
+<td align="left">mkdir</td>
+<td align="left">创建目录</td>
+<td align="left"><code>os.mkdir(目录名)</code></td>
+</tr>
+
+<tr>
+<td align="left">03</td>
+<td align="left">rmdir</td>
+<td align="left">删除目录</td>
+<td align="left"><code>os.rmdir(目录名)</code></td>
+</tr>
+
+<tr>
+<td align="left">04</td>
+<td align="left">getcwd</td>
+<td align="left">获取当前目录</td>
+<td align="left"><code>os.getcwd()</code></td>
+</tr>
+
+<tr>
+<td align="left">05</td>
+<td align="left">chdir</td>
+<td align="left">修改工作目录</td>
+<td align="left"><code>os.chdir(目标目录)</code></td>
+</tr>
+
+<tr>
+<td align="left">06</td>
+<td align="left">path.isdir</td>
+<td align="left">判断是否是文件</td>
+<td align="left"><code>os.path.isdir(文件路径)</code></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://misaya19.github.io/tags/tag1/">tag1</a>
+
+  <a class="tag tag--primary tag--small" href="https://misaya19.github.io/tags/tag2/">tag2</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/" data-tooltip="Python 教程 ">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 钱 奇. 
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/" data-tooltip="Python 教程 ">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E8%25A7%2586%25E9%25A2%2591%25E6%2595%2599%25E7%25A8%258B-%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2F">
+          <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E8%25A7%2586%25E9%25A2%2591%25E6%2595%2599%25E7%25A8%258B-%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2F">
+          <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmisaya19.github.io%2F2019%2F07%2Fpython-%25E8%25A7%2586%25E9%25A2%2591%25E6%2595%2599%25E7%25A8%258B-%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2F">
+          <i class="fa fa-google-plus"></i><span>%!(EXTRA string=Google&#43;)</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://misaya19.github.io/images/touxiang.jpg" alt="" />
+    
+    <h4 id="about-card-name">钱 奇</h4>
+    
+      <div id="about-card-bio">NJXZC-NUIST</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        学生
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        南京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://misaya19.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://misaya19.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/misaya19.github.io\/2019\/07\/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/';
+          
+            this.page.identifier = '\/2019\/07\/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

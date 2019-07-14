@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 雪月</title>
+    <link>https://misaya19.github.io/post/</link>
+    <description>Recent content in Posts on 雪月</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jul 2019 11:46:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://misaya19.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python 教程 </title>
+      <link>https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sun, 14 Jul 2019 11:46:04 +0800</pubDate>
+      
+      <guid>https://misaya19.github.io/2019/07/python-%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;廖雪峰老师的 Python 教程学习笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 视频教程 学习笔记</title>
+      <link>https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 14 Jul 2019 11:43:04 +0800</pubDate>
+      
+      <guid>https://misaya19.github.io/2019/07/python-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;Bilibili的 Python 视频教程学习笔记&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
